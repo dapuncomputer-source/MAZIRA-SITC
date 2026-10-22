@@ -1,0 +1,419 @@
+
+/* ========================================
+   1. RESET DAN VARIABEL GLOBAL
+======================================== */
+
+:root {
+    /* Warna utama */
+    --warna-hitam: #0B0B0B;
+    --warna-hitam-muda: #171717;
+    --warna-emas: #C9A646;
+    --warna-emas-hover: #D9B95F;
+    --warna-putih: #FFFFFF;
+    --warna-latar: #F5F3EE;
+
+    /* Warna teks */
+    --warna-teks: #111111;
+    --warna-teks-terang: #FFFFFF;
+    --warna-teks-sekunder: #B8B8B8;
+
+    /* Garis */
+    --warna-border: #303030;
+    --warna-border-terang: #E5E5E5;
+
+    /* Container dan jarak luar halaman */
+    --jarak-kertas: 5%;
+    --lebar-maksimum: 1440px;
+
+    /* Jarak komponen */
+    --jarak-kecil: 8px;
+    --jarak-sedang: 16px;
+    --jarak-besar: 24px;
+
+    /* Tinggi navbar */
+    --tinggi-topbar: 42px;
+    --tinggi-navbar: 90px;
+}
+
+/* ========================================
+   2. RESET
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--warna-putih);
+    color: var(--warna-teks);
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+input {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* ========================================
+   3. CONTAINER GLOBAL
+======================================== */
+
+.container {
+    width: calc(100% - (var(--jarak-kertas) * 2));
+    max-width: var(--lebar-maksimum);
+    margin-inline: auto;
+}
+
+/* ========================================
+   4. HEADER
+======================================== */
+
+.header {
+    width: 100%;
+    background: var(--warna-hitam);
+    color: var(--warna-teks-terang);
+}
+
+/* ========================================
+   5. TOPBAR
+======================================== */
+
+.topbar {
+    background: var(--warna-hitam);
+    border-bottom: 1px solid var(--warna-border);
+}
+
+.topbar-container {
+    min-height: var(--tinggi-topbar);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.tagline {
+    color: var(--warna-teks-sekunder);
+    font-size: 11px;
+    letter-spacing: 0.3px;
+}
+
+/* ========================================
+   6. PILIHAN BAHASA
+======================================== */
+
+.language {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    color: #555555;
+    font-size: 11px;
+}
+
+.lang {
+    padding: 4px 0;
+    border: none;
+    background: transparent;
+    color: #C4C4C4;
+    transition: color 0.2s ease;
+}
+
+.lang:hover,
+.lang.active {
+    color: var(--warna-emas);
+}
+
+.lang.active {
+    font-weight: 700;
+}
+
+.lang:focus-visible {
+    outline: 1px solid var(--warna-emas);
+    outline-offset: 4px;
+}
+
+/* ========================================
+   7. NAVBAR WRAPPER
+======================================== */
+
+.navbar-wrapper {
+    background: var(--warna-hitam);
+    border-bottom: 1px solid var(--warna-border);
+}
+
+.navbar {
+    min-height: var(--tinggi-navbar);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+/* ========================================
+   8. BRAND / IDENTITAS
+======================================== */
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+    color: var(--warna-putih);
+}
+
+.brand-logo {
+    width: 58px;
+    height: 58px;
+    object-fit: contain;
+    display: block;
+    flex-shrink: 0;
+}
+
+.brand-text h1 {
+    color: var(--warna-putih);
+    font-size: 19px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    white-space: nowrap;
+}
+
+.brand-text p {
+    margin-top: 4px;
+    color: var(--warna-emas);
+    font-size: 8px;
+    letter-spacing: 0.7px;
+    line-height: 1.5;
+    white-space: nowrap;
+}
+
+/* ========================================
+   9. MENU NAVIGASI
+======================================== */
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 21px;
+    list-style: none;
+}
+
+.nav-link {
+    position: relative;
+    display: inline-block;
+    padding: 10px 0;
+    color: #E8E8E8;
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: color 0.25s ease;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    width: 0;
+    height: 2px;
+    background: var(--warna-emas);
+    transition: width 0.25s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--warna-emas);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+/* ========================================
+   10. TOMBOL LOGIN
+======================================== */
+
+.login-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 19px;
+    background: var(--warna-emas);
+    color: var(--warna-hitam);
+    border: 1px solid var(--warna-emas);
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 700;
+    white-space: nowrap;
+    flex-shrink: 0;
+    transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.login-btn:hover {
+    background: transparent;
+    color: var(--warna-emas);
+    border-color: var(--warna-emas);
+}
+
+.login-btn svg {
+    flex-shrink: 0;
+}
+
+/* ========================================
+   11. KONTEN UTAMA
+======================================== */
+
+.main-content {
+    min-height: 60vh;
+    background: var(--warna-latar);
+}
+
+/* ========================================
+   12. RESPONSIVE TABLET
+======================================== */
+
+@media (max-width: 1100px) {
+    .navbar {
+        flex-wrap: wrap;
+        gap: 18px;
+        padding-block: 18px;
+    }
+
+    .brand {
+        margin-right: auto;
+    }
+
+    .nav-menu {
+        order: 3;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 24px;
+        border-top: 1px solid var(--warna-border);
+        padding-top: 14px;
+    }
+}
+
+/* ========================================
+   13. RESPONSIVE HP
+======================================== */
+
+@media (max-width: 600px) {
+    :root {
+        --jarak-kertas: 4%;
+        --tinggi-topbar: 44px;
+    }
+
+    .topbar-container {
+        gap: 10px;
+    }
+
+    .tagline {
+        max-width: 170px;
+        font-size: 9px;
+        line-height: 1.5;
+    }
+
+    .language {
+        gap: 6px;
+        font-size: 10px;
+    }
+
+    .navbar {
+        gap: 15px;
+        padding-block: 14px;
+    }
+
+    .brand {
+        gap: 8px;
+    }
+
+    .brand-logo {
+        width: 42px;
+        height: 42px;
+    }
+
+    .brand-text h1 {
+        font-size: 15px;
+        letter-spacing: 0.5px;
+    }
+
+    .brand-text p {
+        max-width: 170px;
+        font-size: 6px;
+        letter-spacing: 0.3px;
+        white-space: normal;
+        line-height: 1.5;
+    }
+
+    .login-btn {
+        gap: 5px;
+        padding: 9px 11px;
+        font-size: 11px;
+    }
+
+    .login-btn svg {
+        width: 15px;
+        height: 15px;
+    }
+
+    .nav-menu {
+        gap: 6px 16px;
+        padding-top: 10px;
+    }
+
+    .nav-link {
+        font-size: 11px;
+        padding: 8px 0;
+    }
+}
+
+/* ========================================
+   14. HP KECIL
+======================================== */
+
+@media (max-width: 360px) {
+    .tagline {
+        max-width: 125px;
+    }
+
+    .language {
+        gap: 5px;
+        font-size: 9px;
+    }
+
+    .brand-text p {
+        max-width: 135px;
+    }
+
+    .nav-menu {
+        gap: 5px 12px;
+    }
+}
