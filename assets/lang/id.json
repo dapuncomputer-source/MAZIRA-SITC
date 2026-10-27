@@ -2,14 +2,26 @@
 
 
 {
-    "tagline": "Menyelaraskan Kearifan Ilahi, Ketajaman Intelektual, dan Keunggulan Digita",
+    "tagline": "Memadukan kearifan ilahi,  ketajaman pikiran, dan keahlian digital",
     "brand_description": "SPIRITUAL • INTELLECTUAL • TECHNOLOGICAL CODE",
     "beranda": "Beranda",
+    "tentang_kami": "Tentang kami",
     "layanan": "Layanan",
-    "spiritual": "Spiritual",
-    "intelektual": "Intelektual",
-    "teknologi": "Teknologi",
-    "berita": "Berita",
-    "aktivitas": "Aktivitas",
-    "login": "Login"
+    "aktivitas": "Aktivitas SITC",
+    "kontak": "Kontak",
+    "login": "Login",
+
+
+
+
+
+    "hero_explore": "Jelajahi MAZIRA",
+    "hero_about": "Tentang Kami",
+    "footer_explore":"Jelajahi",
+    "footer_information":"Informasi",
+    "footer_contact":"Hubungi Kami",
+    "footer_contact_description": "Untuk informasi dan kerja sama, silakan hubungi pengelola MAZIRA SITC.",
+    "footer_manager": "Akses Pengelola",
+    "footer_copyright": "© 2026 MAZIRA SITC. Hak cipta dilindungi.",
+    "footer_privacy": "Kebijakan Privasi"
 }

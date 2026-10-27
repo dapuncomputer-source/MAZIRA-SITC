@@ -649,3 +649,321 @@ img {
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+/* ========== { Home - Hero } ========== */
+.home {
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    background:
+        radial-gradient(ellipse at 74% 60%, #29200d 0%, transparent 42%),
+        linear-gradient(115deg, #080808 0%, #11100d 100%);
+    color: var(--warna-putih);
+}
+
+
+.hero::before,
+.hero::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 260px;
+    height: 260px;
+    border: 1px solid rgb(201 166 70 / 13%);
+    /* border: 1px solid #fff; */
+    transform: rotate(45deg);
+    pointer-events: none;
+}
+
+
+
+.hero::after {
+    right: -140px;
+    bottom: -160px;
+}
+
+.hero-container {
+    min-height: 390px;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    align-items: center;
+    gap: 45px;
+    padding-block: 65px;
+}
+
+.hero-content {
+    max-width: 680px;
+}
+
+.hero-eyebrow,
+.section-eyebrow {
+    margin-bottom: 14px;
+    color: var(--warna-emas);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.hero-title {
+    margin-bottom: 20px;
+    color: var(--warna-putih);
+    font-size: clamp(30px, 4vw, 49px);
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -0.8px;
+}
+
+.hero-title > span {
+    display: block;
+}
+
+.hero-highlight {
+    color: var(--warna-emas);
+}
+
+.hero-description {
+    max-width: 560px;
+    margin-bottom: 28px;
+    color: #D0D0D0;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 13px;
+}
+
+.btn {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 11px 19px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 700;
+    transition:
+        color 0.25s ease,
+        background 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.btn-primary {
+    background: var(--warna-emas);
+    border-color: var(--warna-emas);
+    color: var(--warna-hitam);
+}
+
+.btn-primary:hover {
+    background: var(--warna-emas-hover);
+    border-color: var(--warna-emas-hover);
+}
+
+.btn-outline {
+    background: transparent;
+    border-color: var(--warna-emas);
+    color: var(--warna-putih);
+}
+
+.btn-outline:hover {
+    background: var(--warna-emas);
+    color: var(--warna-hitam);
+}
+
+
+
+
+/* Deklarasi visual hero */
+.hero-visual {
+    position: relative;
+    width: min(100%, 360px);
+    aspect-ratio: 1;
+    display: grid;
+    place-items: center;
+    justify-self: center;
+}
+
+.hero-emblem {
+    position: relative;
+    z-index: 1;
+    width: 145px;
+    height: 145px;
+    display: grid;
+    place-items: center;
+    border: 1px solid rgb(201 166 70 / 45%);
+    border-radius: 50%;
+    background: radial-gradient(
+        circle,
+        rgb(201 166 70 / 13%),
+        transparent 70%
+    );
+    box-shadow: 0 0 65px rgb(201 166 70 / 12%);
+}
+
+
+.hero-emblem img {
+    width: 90px;
+    height: 110px;
+    object-fit: contain;
+}
+
+
+
+.hero-orbit {
+    position: absolute;
+    border: 1px solid rgb(201 166 70 / 28%);
+    border-radius: 50%;
+    transform-origin: center center;
+}
+
+.hero-orbit-one {
+    width: 190px;
+    height: 190px;
+    --orbit-skala: 0.65;
+    animation: orbit-berputar 10s linear infinite;
+}
+
+.hero-orbit-two {
+    width: 260px;
+    height: 260px;
+    /* transform: rotateX(60deg); */
+    --orbit-skala: 0.48;
+    animation: orbit-berputar 14s linear infinite reverse;
+}
+
+.hero-orbit-three {
+    width: 260px;
+    height: 260px;
+    /* transform: 
+        rotateY(40deg)
+        rotateX(45deg)
+    ;
+    border: 3px solid rgb(201 166 70 / 28%); */
+    --orbit-skala: 0.72;
+    animation: orbit-berputar 12s linear infinite;
+}
+
+.hero-orbit-four {
+    width: 260px;
+    height: 260px;
+    /* transform: 
+        rotateY(50deg)
+        rotateX(-45deg)
+    ;
+    border: 3px solid rgb(201 166 70 / 28%); */
+    --orbit-skala: 0.58;
+    animation: orbit-berputar 16s linear infinite reverse;
+}
+
+.hero-orbit-five {
+    width: 315px;
+    height: 315px;
+    opacity: 0.55;
+    border-style: dashed;
+    --orbit-skala: 0.9;
+    animation: orbit-berputar 20s linear infinite;
+}
+
+
+@keyframes orbit-berputar {
+    from {
+        transform: rotate(0deg) scaleY(var(--orbit-skala, 0.65));
+    }
+
+    to {
+        transform: rotate(360deg) scaleY(var(--orbit-skala, 0.65));
+    }
+}
+
+
+
+
+
+
+/* ========================================
+   ANIMASI TITIK EMAS MAZIRA SITC
+======================================== */
+.hero-dot-orbit {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    pointer-events: none;
+    animation: titik-mengelilingi 12s linear infinite;
+}
+
+/* Tampilan dasar setiap titik */
+.hero-dot-orbit .hero-dot {
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--warna-emas);
+    box-shadow:
+        0 0 8px rgb(201 166 70 / 75%),
+        0 0 16px rgb(201 166 70 / 30%);
+}
+
+/* Titik 1: bagian atas */
+.hero-dot-one {
+    top: 17%;
+    left: 50%;
+}
+
+/* Titik 2: kanan atas */
+.hero-dot-two {
+    top: 28%;
+    left: 84%;
+}
+
+/* Titik 3: kanan bawah */
+.hero-dot-three {
+    top: 70%;
+    left: 93%;
+}
+
+/* Titik 4: bawah */
+.hero-dot-four {
+    top: 88%;
+    left: 67%;
+}
+
+/* Titik 5: kiri bawah */
+.hero-dot-five {
+    top: 80%;
+    left: 21%;
+}
+
+/* Titik 6: kiri */
+.hero-dot-six {
+    top: 36%;
+    left: 10%;
+}
+
+@keyframes titik-mengelilingi {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

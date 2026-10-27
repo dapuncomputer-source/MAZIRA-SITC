@@ -2,14 +2,30 @@
 
 
 {
-  "tagline": "التوفيق بين الحكمة الإلهية والتميز الفكري والتفوق الرقمي",
-  "brand_description": "الروحانية • الفكر • التكنولوجيا",
-  "beranda": "الرئيسية",
-  "layanan": "الخدمات",
-  "spiritual": "الروحانية",
-  "intelektual": "الفكر",
-  "teknologi": "التكنولوجيا",
-  "berita": "الأخبار",
-  "aktivitas": "الأنشطة",
-  "login": "تسجيل الدخول"
+    "tagline": "التوفيق بين الحكمة الإلهية والتميز الفكري والتفوق الرقمي",
+    "brand_description": "الروحانية • الفكر • التكنولوجيا",
+    "beranda": "الرئيسية",
+    "tentang_kami": "عنا",
+    "layanan": "الخدمات",
+    "aktivitas": "الأنشطة",
+    "kontak": "اتصال",
+    "login": "تسجيل الدخول",
+
+
+
+
+
+
+
+
+   "hero_description": "ننسجم مع الحكمة الإلهية والتميز الفكري والابتكار الرقمي.",
+    "hero_explore": "اكتشف مازيرا",
+    "hero_about": "من نحن",
+    "footer_explore": "استكشف",
+    "footer_information": "المعلومات",
+    "footer_contact": "اتصل بنا",
+    "footer_contact_description": "للاستفسارات والتعاون، يرجى التواصل مع إدارة MAZIRA SITC.",
+    "footer_manager": "دخول الإدارة",
+    "footer_copyright": "© 2026 MAZIRA SITC. جميع الحقوق محفوظة.",
+    "footer_privacy": "سياسة الخصوصية"
 }

@@ -5,11 +5,28 @@
     "tagline": "Harmonizing Divine Wisdom, Intellectual Acuity, and Digital Excellence",
     "brand_description": "SPIRITUAL • INTELLECTUAL • TECHNOLOGICAL CODE",
     "beranda": "Home",
+    "tentang_kami": "About us",
     "layanan": "Services",
-    "spiritual": "Spiritual",
-    "intelektual": "Intellectual",
-    "teknologi": "Technology",
-    "berita": "News",
-    "aktivitas": "Aktivities",
-    "login": "Login"
+    "aktivitas": "Aktivities SITC",
+    "kontak": "Contact",
+    "login": "Login",
+
+
+
+
+
+    
+    "hero_description": "Aligning Divine Wisdom, Intellectual Excellence, and Digital Innovation.",
+    "hero_explore": "Explore MAZIRA",
+    "hero_about": "About Us",
+    "footer_explore": "Explore",
+    "footer_information": "Information",
+    "footer_contact": "Contact Us",
+    "footer_contact_description": "For information and collaboration, please contact the MAZIRA SITC management team.",
+    "footer_manager": "Management Access",
+    "footer_copyright": "© 2026 MAZIRA SITC. All rights reserved.",
+    "footer_privacy": "Privacy Policy"
+
+
+
 }
