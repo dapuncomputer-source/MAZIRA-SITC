@@ -697,16 +697,21 @@ img {
 }
 
 .hero-container {
-    min-height: 390px;
+    min-height: 480px;
+
     display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
     align-items: center;
-    gap: 45px;
-    padding-block: 65px;
+
+    /* Jarak tulisan dengan area logo */
+    gap: clamp(70px, 8vw, 140px);
+
+    padding-block: 75px;
 }
 
 .hero-content {
     max-width: 680px;
+    min-width: 0;
 }
 
 .hero-eyebrow,
@@ -792,107 +797,6 @@ img {
 
 
 
-/* Deklarasi visual hero */
-.hero-visual {
-    position: relative;
-    width: min(100%, 360px);
-    aspect-ratio: 1;
-    display: grid;
-    place-items: center;
-    justify-self: center;
-}
-
-.hero-emblem {
-    position: relative;
-    z-index: 1;
-    width: 145px;
-    height: 145px;
-    display: grid;
-    place-items: center;
-    border: 1px solid rgb(201 166 70 / 45%);
-    border-radius: 50%;
-    background: radial-gradient(
-        circle,
-        rgb(201 166 70 / 13%),
-        transparent 70%
-    );
-    box-shadow: 0 0 65px rgb(201 166 70 / 12%);
-}
-
-
-.hero-emblem img {
-    width: 90px;
-    height: 110px;
-    object-fit: contain;
-}
-
-
-
-.hero-orbit {
-    position: absolute;
-    border: 1px solid rgb(201 166 70 / 28%);
-    border-radius: 50%;
-    transform-origin: center center;
-}
-
-.hero-orbit-one {
-    width: 190px;
-    height: 190px;
-    --orbit-skala: 0.65;
-    animation: orbit-berputar 10s linear infinite;
-}
-
-.hero-orbit-two {
-    width: 260px;
-    height: 260px;
-    /* transform: rotateX(60deg); */
-    --orbit-skala: 0.48;
-    animation: orbit-berputar 14s linear infinite reverse;
-}
-
-.hero-orbit-three {
-    width: 260px;
-    height: 260px;
-    /* transform: 
-        rotateY(40deg)
-        rotateX(45deg)
-    ;
-    border: 3px solid rgb(201 166 70 / 28%); */
-    --orbit-skala: 0.72;
-    animation: orbit-berputar 12s linear infinite;
-}
-
-.hero-orbit-four {
-    width: 260px;
-    height: 260px;
-    /* transform: 
-        rotateY(50deg)
-        rotateX(-45deg)
-    ;
-    border: 3px solid rgb(201 166 70 / 28%); */
-    --orbit-skala: 0.58;
-    animation: orbit-berputar 16s linear infinite reverse;
-}
-
-.hero-orbit-five {
-    width: 315px;
-    height: 315px;
-    opacity: 0.55;
-    border-style: dashed;
-    --orbit-skala: 0.9;
-    animation: orbit-berputar 20s linear infinite;
-}
-
-
-@keyframes orbit-berputar {
-    from {
-        transform: rotate(0deg) scaleY(var(--orbit-skala, 0.65));
-    }
-
-    to {
-        transform: rotate(360deg) scaleY(var(--orbit-skala, 0.65));
-    }
-}
 
 
 
@@ -900,65 +804,215 @@ img {
 
 
 /* ========================================
-   ANIMASI TITIK EMAS MAZIRA SITC
+   ORBIT PLANET MAZIRA SITC
 ======================================== */
-.hero-dot-orbit {
+
+.hero-visual {
+    position: relative;
+    width: min(100%, 460px);
+    aspect-ratio: 1 / 1;
+    display: grid;
+    place-items: center;
+    justify-self: center;
+    perspective: 1000px;
+    isolation: isolate;
+}
+
+/* LOGO TENGAH: TIDAK BERPUTAR */
+
+.hero-emblem {
+    position: relative;
+    z-index: 5;
+    width: 145px;
+    height: 145px;
+    display: grid;
+    place-items: center;
+    border: 1px solid rgb(201 166 70 / 45%);
+    border-radius: 50%;
+
+    background: radial-gradient(
+        circle,
+        rgb(201 166 70 / 13%),
+        transparent 70%
+    );
+
+    box-shadow: 0 0 65px rgb(201 166 70 / 12%);
+}
+
+.hero-emblem img {
+    width: 90px;
+    height: 110px;
+    object-fit: contain;
+}
+
+/* GARIS ORBIT IKUT BERPUTAR */
+.hero-orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: var(--orbit-width);
+    height: var(--orbit-height);
+
+    margin-left: calc(var(--orbit-width) / -2);
+    margin-top: calc(var(--orbit-height) / -2);
+
+    border: 1px solid rgb(201 166 70 / 35%);
+    border-radius: 50%;
+
+    transform:
+        rotate(var(--orbit-angle))
+        rotateX(var(--orbit-tilt));
+
+    transform-style: preserve-3d;
+    transform-origin: center;
+    pointer-events: none;
+
+    /* Memutar garis pada poros tengah */
+    animation:
+        orbit-line-spin
+        var(--orbit-speed)
+        linear
+        infinite;
+}
+
+
+
+
+/* ANIMASI ROTASI GARIS */
+
+@keyframes orbit-line-spin {
+    from {
+        transform:
+            rotate(var(--orbit-angle))
+            rotateX(var(--orbit-tilt));
+    }
+
+    to {
+        transform:
+            rotate(calc(var(--orbit-angle) + 360deg))
+            rotateX(var(--orbit-tilt));
+    }
+}
+
+
+
+
+
+/* PEMBUNGKUS TITIK: INILAH YANG BERPUTAR */
+
+.orbit-rotation {
     position: absolute;
     inset: 0;
+
     border-radius: 50%;
-    pointer-events: none;
-    animation: titik-mengelilingi 12s linear infinite;
+
+    animation:
+        planet-spin
+        var(--orbit-speed)
+        linear
+        infinite;
+
+    transform-origin: center;
 }
 
-/* Tampilan dasar setiap titik */
-.hero-dot-orbit .hero-dot {
+/* TITIK PLANET */
+
+.orbit-dot {
     position: absolute;
-    width: 7px;
-    height: 7px;
+    top: -4px;
+    left: 50%;
+
+    width: 8px;
+    height: 8px;
+
     border-radius: 50%;
     background: var(--warna-emas);
+
     box-shadow:
-        0 0 8px rgb(201 166 70 / 75%),
-        0 0 16px rgb(201 166 70 / 30%);
+        0 0 8px rgb(201 166 70 / 90%),
+        0 0 16px rgb(201 166 70 / 50%);
+
+    transform: translateX(-50%);
 }
 
-/* Titik 1: bagian atas */
-.hero-dot-one {
-    top: 17%;
-    left: 50%;
+/* ORBIT 1 */
+
+.orbit-one {
+    --orbit-width: 190px;
+    --orbit-height: 85px;
+    --orbit-speed: 5s;
+    --orbit-tilt: 12deg;
+    --orbit-angle: 0deg;
+
+    z-index: 2;
 }
 
-/* Titik 2: kanan atas */
-.hero-dot-two {
-    top: 28%;
-    left: 84%;
+/* ORBIT 2 */
+
+.orbit-two {
+    --orbit-width: 235px;
+    --orbit-height: 100px;
+    --orbit-speed: 8s;
+    --orbit-tilt: -10deg;
+    --orbit-angle: 35deg;
+
+    z-index: 1;
 }
 
-/* Titik 3: kanan bawah */
-.hero-dot-three {
-    top: 70%;
-    left: 93%;
+.orbit-two .orbit-dot {
+    width: 6px;
+    height: 6px;
 }
 
-/* Titik 4: bawah */
-.hero-dot-four {
-    top: 88%;
-    left: 67%;
+/* ORBIT 3 */
+
+.orbit-three {
+    --orbit-width: 280px;
+    --orbit-height: 115px;
+    --orbit-speed: 11s;
+    --orbit-tilt: 9deg;
+    --orbit-angle: 75deg;
+
+    z-index: 2;
 }
 
-/* Titik 5: kiri bawah */
-.hero-dot-five {
-    top: 80%;
-    left: 21%;
+.orbit-three .orbit-dot {
+    width: 7px;
+    height: 7px;
 }
 
-/* Titik 6: kiri */
-.hero-dot-six {
-    top: 36%;
-    left: 10%;
+/* ORBIT 4 */
+
+.orbit-four {
+    --orbit-width: 325px;
+    --orbit-height: 130px;
+    --orbit-speed: 15s;
+    --orbit-tilt: -12deg;
+    --orbit-angle: 120deg;
+
+    z-index: 1;
 }
 
-@keyframes titik-mengelilingi {
+/* ORBIT TERLUAR */
+
+.orbit-five {
+    --orbit-width: 365px;
+    --orbit-height: 145px;
+    --orbit-speed: 20s;
+    --orbit-tilt: 8deg;
+    --orbit-angle: 155deg;
+
+    z-index: 0;
+    opacity: 0.65;
+    border-style: dashed;
+}
+
+
+
+/* ANIMASI PLANET */
+
+@keyframes planet-spin {
     from {
         transform: rotate(0deg);
     }
@@ -967,3 +1021,271 @@ img {
         transform: rotate(360deg);
     }
 }
+
+
+/* HERO TABLET DAN HP */
+
+@media (max-width: 900px) {
+    .hero-container {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 35px;
+        padding-block: 55px;
+    }
+
+    .hero-content {
+        max-width: 680px;
+    }
+
+    .hero-visual {
+        width: min(100%, 400px);
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-container {
+        gap: 25px;
+        padding-block: 45px;
+    }
+
+    .hero-title {
+        font-size: clamp(30px, 8vw, 40px);
+    }
+
+    .hero-visual {
+        width: min(100%, 340px);
+    }
+}
+
+/* AKSESIBILITAS: KURANGI ANIMASI JIKA DIMINTA */
+
+/* @media (prefers-reduced-motion: reduce) {
+    .orbit-rotation {
+        animation: none;
+    }
+} */
+
+
+
+
+
+
+/* ========================================
+   ORBIT MAZIRA — VERSI LEBIH LEBAR
+======================================== */
+
+/* Area orbit diperluas */
+.hero-visual {
+    width: min(100%, 500px);
+    overflow: visible;
+    perspective: 1000px;
+    perspective-origin: center;
+}
+
+/* Garis orbit bergerak dalam ruang 3D */
+.hero-orbit {
+    animation: orbit-wheel-spin var(--orbit-speed) linear infinite;
+    transform-style: preserve-3d;
+    will-change: transform;
+}
+
+/* Garis berputar seperti roda */
+@keyframes orbit-wheel-spin {
+    from {
+        transform:
+            rotateZ(var(--orbit-angle))
+            rotateX(var(--orbit-tilt))
+            rotateY(0deg);
+    }
+
+    to {
+        transform:
+            rotateZ(var(--orbit-angle))
+            rotateX(var(--orbit-tilt))
+            rotateY(360deg);
+    }
+}
+
+/* Orbit 1 */
+.orbit-one {
+    --orbit-width: 210px;
+    --orbit-height: 100px;
+    --orbit-speed: 7s;
+    --orbit-tilt: 18deg;
+    --orbit-angle: 0deg;
+}
+
+/* Orbit 2 */
+.orbit-two {
+    --orbit-width: 270px;
+    --orbit-height: 125px;
+    --orbit-speed: 10s;
+    --orbit-tilt: 58deg;
+    --orbit-angle: 35deg;
+}
+
+/* Orbit 3 — hampir datar */
+.orbit-three {
+    --orbit-width: 320px;
+    --orbit-height: 140px;
+    --orbit-speed: 13s;
+    --orbit-tilt: 72deg;
+    --orbit-angle: 0deg;
+}
+
+/* Orbit 4 — miring berlawanan */
+.orbit-four {
+    --orbit-width: 370px;
+    --orbit-height: 155px;
+    --orbit-speed: 17s;
+    --orbit-tilt: -48deg;
+    --orbit-angle: 120deg;
+}
+
+/* Orbit 5 — garis terluar */
+.orbit-five {
+    --orbit-width: 420px;
+    --orbit-height: 175px;
+    --orbit-speed: 22s;
+    --orbit-tilt: 12deg;
+    --orbit-angle: 155deg;
+
+    opacity: 0.65;
+    border-style: dashed;
+}
+
+/* Orbit 6 — roda datar */
+.orbit-six {
+    --orbit-width: 450px;
+    --orbit-height: 185px;
+    --orbit-speed: 19s;
+    --orbit-tilt: 78deg;
+    --orbit-angle: 65deg;
+
+    z-index: 0;
+    opacity: 0.55;
+}
+
+/* Orbit 7 — lingkaran luar tambahan */
+.orbit-seven {
+    --orbit-width: 390px;
+    --orbit-height: 165px;
+    --orbit-speed: 26s;
+    --orbit-tilt: -65deg;
+    --orbit-angle: 145deg;
+
+    z-index: 0;
+    opacity: 0.45;
+    border-style: dashed;
+}
+
+/* Logo tetap diam di tengah */
+.hero-emblem {
+    position: relative;
+    z-index: 5;
+}
+
+/* HP */
+@media (max-width: 600px) {
+    .hero-visual {
+        width: min(100%, 350px);
+    }
+
+    .orbit-one {
+        --orbit-width: 155px;
+        --orbit-height: 75px;
+    }
+
+    .orbit-two {
+        --orbit-width: 190px;
+        --orbit-height: 90px;
+    }
+
+    .orbit-three {
+        --orbit-width: 225px;
+        --orbit-height: 100px;
+    }
+
+    .orbit-four {
+        --orbit-width: 260px;
+        --orbit-height: 110px;
+    }
+
+    .orbit-five {
+        --orbit-width: 295px;
+        --orbit-height: 120px;
+    }
+
+    .orbit-six {
+        --orbit-width: 325px;
+        --orbit-height: 130px;
+    }
+
+    .orbit-seven {
+        --orbit-width: 280px;
+        --orbit-height: 115px;
+    }
+}
+
+
+
+
+
+/* ========================================
+   CAHAYA LOGO MAZIRA — SLOW PULSE
+======================================== */
+
+.hero-emblem {
+    animation: logo-glow-pulse 4s ease-in-out infinite;
+    will-change: box-shadow, filter;
+}
+
+.hero-emblem img {
+    animation: logo-light-pulse 4s ease-in-out infinite;
+}
+
+/* Cahaya di sekitar logo berdenyut perlahan */
+@keyframes logo-glow-pulse {
+    0%,
+    100% {
+        box-shadow:
+            0 0 25px rgb(201 166 70 / 10%),
+            0 0 55px rgb(201 166 70 / 5%);
+        border-color: rgb(201 166 70 / 35%);
+    }
+
+    50% {
+        box-shadow:
+            0 0 35px rgb(201 166 70 / 25%),
+            0 0 75px rgb(201 166 70 / 18%),
+            0 0 110px rgb(201 166 70 / 8%);
+        border-color: rgb(217 185 95 / 75%);
+    }
+}
+
+/* Cahaya pada logo ikut menguat dan meredup */
+@keyframes logo-light-pulse {
+    0%,
+    100% {
+        filter:
+            brightness(1)
+            drop-shadow(0 0 2px rgb(201 166 70 / 20%));
+    }
+
+    50% {
+        filter:
+            brightness(1.18)
+            drop-shadow(0 0 8px rgb(201 166 70 / 65%))
+            drop-shadow(0 0 18px rgb(201 166 70 / 25%));
+    }
+}
+
+/* Hormati pengaturan pengurangan animasi pengguna */
+/* @media (prefers-reduced-motion: reduce) {
+    .hero-emblem,
+    .hero-emblem img {
+        animation: none;
+    }
+} */
+
+
+
