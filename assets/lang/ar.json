@@ -2,30 +2,73 @@
 
 
 {
-    "tagline": "التوفيق بين الحكمة الإلهية والتميز الفكري والتفوق الرقمي",
-    "brand_description": "الروحانية • الفكر • التكنولوجيا",
-    "beranda": "الرئيسية",
-    "tentang_kami": "عنا",
-    "layanan": "الخدمات",
-    "aktivitas": "الأنشطة",
-    "kontak": "اتصال",
-    "login": "تسجيل الدخول",
+
+    "navbar": {
+        "tagline": "التوفيق بين الحكمة الإلهية والتميز الفكري والتفوق الرقمي",
+        "brand_description": "الروحانية • الفكر • التكنولوجيا",
+        "beranda": "الرئيسية",
+        "tentang_kami": "عنا",
+        "layanan": "الخدمات",
+        "aktivitas": "الأنشطة",
+        "kontak": "اتصال",
+        "login": "تسجيل الدخول"
+    },
+
+
+
+
+    "home": {
+        "hero_eyebrow": "الروحانية • الفكر • التكنولوجيا",
+        "hero_title_line1": "نوحّد القيم،",
+        "hero_title_line2": "ونبني المستقبل.",
+        "hero_description": "نجمع بين القوة الروحية والعمق الفكري والابتكار التكنولوجي لإحداث تغيير ذي معنى.",
+        "hero_explore": "اكتشف مازيرا",
+        "hero_about": "من نحن",
 
 
 
 
 
 
+        "pillars_eyebrow": "أسس مازيرا",
+        "pillars_title": "ركائز مازيرا الثلاث",
+        "pillars_description": "ثلاث ركائز أساسية لبناء جيل متميز قادر على المنافسة في العصر الحديث.",
+        "pillar_spiritual_title": "الروحانية",
+        "pillar_spiritual_description": "ترسيخ القيم والأخلاق وتعزيز الصلة بالخالق.",
+        "pillar_intellectual_title": "الفكر",
+        "pillar_intellectual_description": "تنمية العلم والمنطق والمعرفة لمواجهة تحديات العصر.",
+        "pillar_technology_title": "التكنولوجيا",
+        "pillar_technology_description": "تشجيع الابتكار واستخدام التكنولوجيا لتحقيق الخير للجميع.",
+        "about_eyebrow": "تعرّف علينا",
+        "about_title": "ننمو بالقيم ونتقدم بالعلم.",
+        "about_description": "تجمع مازيرا SITC بين الروحانية والتطور الفكري والتكنولوجيا لتكون أساسًا للتعلم والإبداع وتقديم الفائدة.",
 
 
-   "hero_description": "ننسجم مع الحكمة الإلهية والتميز الفكري والابتكار الرقمي.",
-    "hero_explore": "اكتشف مازيرا",
-    "hero_about": "من نحن",
-    "footer_explore": "استكشف",
-    "footer_information": "المعلومات",
-    "footer_contact": "اتصل بنا",
-    "footer_contact_description": "للاستفسارات والتعاون، يرجى التواصل مع إدارة MAZIRA SITC.",
-    "footer_manager": "دخول الإدارة",
-    "footer_copyright": "© 2026 MAZIRA SITC. جميع الحقوق محفوظة.",
-    "footer_privacy": "سياسة الخصوصية"
+
+
+
+        "about_link": "تعرّف على مازيرا",
+        "cta_eyebrow": "نتقدم معًا",
+        "cta_title": "لنبنِ تغييرًا ذا معنى.",
+        "cta_description": "اكتشف أفكار وخدمات وأنشطة مازيرا SITC.",
+        "cta_button": "استكشف الأنشطة",
+        "tentang_kami": "من نحن",
+        "kontak": "اتصل بنا"
+    },
+
+
+
+
+    "footer": {
+        "hero_description": "ننسجم مع الحكمة الإلهية والتميز الفكري والابتكار الرقمي.",
+        "hero_explore": "اكتشف مازيرا",
+        "hero_about": "من نحن",
+        "footer_explore": "استكشف",
+        "footer_information": "المعلومات",
+        "footer_contact": "اتصل بنا",
+        "footer_contact_description": "للاستفسارات والتعاون، يرجى التواصل مع إدارة MAZIRA SITC.",
+        "footer_manager": "دخول الإدارة",
+        "footer_copyright": "© 2026 MAZIRA SITC. جميع الحقوق محفوظة.",
+        "footer_privacy": "سياسة الخصوصية"
+    }
 }

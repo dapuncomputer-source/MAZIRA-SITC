@@ -2,30 +2,77 @@
 
 
 {
-    "tagline": "Harmonizing Divine Wisdom, Intellectual Acuity, and Digital Excellence",
-    "brand_description": "SPIRITUAL • INTELLECTUAL • TECHNOLOGICAL CODE",
-    "beranda": "Home",
-    "tentang_kami": "About us",
-    "layanan": "Services",
-    "aktivitas": "Aktivities SITC",
-    "kontak": "Contact",
-    "login": "Login",
+    "navbar": {
+        "tagline": "Harmonizing Divine Wisdom with Digital Excellence",
+        "brand_description": "SPIRITUAL • INTELLECTUAL • TECHNOLOGICAL CODE",
+        "beranda": "Home",
+        "tentang_kami": "About us",
+        "layanan": "Services",
+        "aktivitas": "Aktivities SITC",
+        "kontak": "Contact",
+        "login": "Login"
+    },
 
 
 
 
 
+
+    "home": { 
+        "hero_eyebrow": "SPIRITUAL • INTELLECTUAL • TECHNOLOGICAL CODE",
+        "hero_title_line1": "Aligning Our Values,",
+        "hero_title_line2": "Building the Future.",
+        "hero_description": "Connecting spiritual strength, intellectual insight, and technological innovation to create meaningful change.",
+        "hero_explore": "Explore MAZIRA",
+        "hero_about": "About Us",
+
+
+
+
+
+        "pillars_eyebrow": "THE FOUNDATION OF MAZIRA",
+        "pillars_title": "The Three Pillars of MAZIRA",
+        "pillars_description": "Three core pillars that lay the foundation for building an excellent generation ready to thrive in the modern era.",
+        "pillar_spiritual_title": "Spiritual",
+        "pillar_spiritual_description": "Nurturing values, character, and a closer connection with the Creator.",
+        "pillar_intellectual_title": "Intellectual",
+        "pillar_intellectual_description": "Developing knowledge, reasoning, and insight to face the challenges of our time.",
+        "pillar_technology_title": "Technology",
+        "pillar_technology_description": "Encouraging innovation and the use of technology for the common good.",
+        "about_eyebrow": "GET TO KNOW US",
+        "about_title": "Growing Through Values, Moving Forward Through Knowledge.",
+        "about_description": "MAZIRA SITC brings together spirituality, intellectual development, and technology as a foundation for learning, creating, and making a positive contribution.",
+        
+        
+        
+        
+        "about_link": "Get to Know MAZIRA",
+        "cta_eyebrow": "MOVING FORWARD TOGETHER",
+        "cta_title": "Let's Create Meaningful Change.",
+        "cta_description": "Explore the ideas, services, and activities of MAZIRA SITC.",
+        "cta_button": "Explore Activities",
+        "tentang_kami": "About Us",
+        "kontak": "Contact"
+    },
     
-    "hero_description": "Aligning Divine Wisdom, Intellectual Excellence, and Digital Innovation.",
-    "hero_explore": "Explore MAZIRA",
-    "hero_about": "About Us",
-    "footer_explore": "Explore",
-    "footer_information": "Information",
-    "footer_contact": "Contact Us",
-    "footer_contact_description": "For information and collaboration, please contact the MAZIRA SITC management team.",
-    "footer_manager": "Management Access",
-    "footer_copyright": "© 2026 MAZIRA SITC. All rights reserved.",
-    "footer_privacy": "Privacy Policy"
+
+
+
+
+
+    "footer": {
+        "hero_description": "Aligning Divine Wisdom, Intellectual Excellence, and Digital Innovation.",
+        "hero_explore": "Explore MAZIRA",
+        "hero_about": "About Us",
+        "footer_explore": "Explore",
+        "footer_information": "Information",
+        "footer_contact": "Contact Us",
+        "footer_contact_description": "For information and collaboration, please contact the MAZIRA SITC management team.",
+        "footer_manager": "Management Access",
+        "footer_copyright": "© 2026 MAZIRA SITC. All rights reserved.",
+        "footer_privacy": "Privacy Policy"
+    }
+    
 
 
 

@@ -93,6 +93,7 @@ img {
     width: 100%;
     background: var(--warna-hitam);
     color: var(--warna-teks-terang);
+    z-index: 9999999;
 }
 
 /* ========================================
@@ -659,6 +660,9 @@ img {
 
 
 
+
+
+
 /* ========== { Home - Hero } ========== */
 .home {
     width: 100%;
@@ -803,6 +807,10 @@ img {
 
 
 
+
+
+
+
 /* ========================================
    ORBIT PLANET MAZIRA SITC
 ======================================== */
@@ -816,7 +824,9 @@ img {
     justify-self: center;
     perspective: 1000px;
     isolation: isolate;
+    
 }
+
 
 /* LOGO TENGAH: TIDAK BERPUTAR */
 
@@ -900,7 +910,6 @@ img {
 
 
 /* PEMBUNGKUS TITIK: INILAH YANG BERPUTAR */
-
 .orbit-rotation {
     position: absolute;
     inset: 0;
@@ -1069,17 +1078,15 @@ img {
 
 
 
+
+
+
+
 /* ========================================
    ORBIT MAZIRA — VERSI LEBIH LEBAR
 ======================================== */
 
-/* Area orbit diperluas */
-.hero-visual {
-    width: min(100%, 500px);
-    overflow: visible;
-    perspective: 1000px;
-    perspective-origin: center;
-}
+
 
 /* Garis orbit bergerak dalam ruang 3D */
 .hero-orbit {
@@ -1279,13 +1286,317 @@ img {
     }
 }
 
-/* Hormati pengaturan pengurangan animasi pengguna */
-/* @media (prefers-reduced-motion: reduce) {
-    .hero-emblem,
-    .hero-emblem img {
-        animation: none;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========================================
+   16. HOME - TIGA PILAR
+======================================== */
+
+.section-light {
+    background: var(--warna-latar);
+    color: var(--warna-teks);
+}
+
+.pillars {
+    padding-block: 55px 60px;
+}
+
+.section-heading {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+.section-heading .section-eyebrow {
+    margin-bottom: 8px;
+}
+
+.section-heading h2 {
+    margin-bottom: 10px;
+    font-size: clamp(25px, 3vw, 32px);
+    line-height: 1.3;
+}
+
+.section-heading > p:last-child {
+    color: #686868;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.pillar-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.pillar-card {
+    min-height: 205px;
+    padding: 27px 22px;
+    text-align: center;
+    background: rgb(255 255 255 / 75%);
+    border: 1px solid var(--warna-border-terang);
+    border-radius: 8px;
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.pillar-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--warna-emas);
+    box-shadow: 0 10px 28px rgb(0 0 0 / 5%);
+}
+
+.pillar-icon {
+    width: 58px;
+    height: 58px;
+    display: grid;
+    place-items: center;
+    margin: 0 auto 12px;
+    border-radius: 50%;
+    background: #F3EBD7;
+    color: #A88732;
+    font-size: 29px;
+}
+
+.pillar-card h3 {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.pillar-line {
+    display: block;
+    width: 32px;
+    height: 2px;
+    margin: 11px auto;
+    background: var(--warna-emas);
+}
+
+.pillar-card p {
+    max-width: 290px;
+    margin-inline: auto;
+    color: #686868;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+
+
+
+
+
+
+
+/* ========================================
+   17. HOME - TENTANG MAZIRA
+======================================== */
+
+.home-about {
+    position: relative;
+    background: var(--warna-hitam);
+    color: var(--warna-putih);
+}
+
+.home-about-container {
+    min-height: 300px;
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    align-items: center;
+    gap: 60px;
+    padding-block: 65px;
+}
+
+.home-about-mark {
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: 1px solid rgb(201 166 70 / 30%);
+    background: radial-gradient(
+        circle,
+        rgb(201 166 70 / 10%),
+        transparent 70%
+    );
+    color: var(--warna-emas);
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: 5px;
+}
+
+.about-mark-line {
+    width: 60px;
+    height: 2px;
+    background: var(--warna-emas);
+}
+
+.home-about-content h2,
+.home-cta h2 {
+    margin-bottom: 15px;
+    font-size: clamp(24px, 3vw, 34px);
+    line-height: 1.35;
+}
+
+.home-about-content > p:not(.section-eyebrow) {
+    max-width: 620px;
+    margin-bottom: 20px;
+    color: #C5C5C5;
+    font-size: 13px;
+    line-height: 1.9;
+}
+
+.text-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--warna-emas);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.text-link:hover {
+    color: var(--warna-emas-hover);
+}
+
+
+
+
+
+
+
+
+
+
+/* ========================================
+   18. HOME - AJAKAN
+======================================== */
+
+.home-cta {
+    background: #F0EDE5;
+    color: var(--warna-teks);
+}
+
+.home-cta-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding-block: 48px;
+}
+
+.home-cta .section-eyebrow {
+    margin-bottom: 8px;
+}
+
+.home-cta h2 {
+    margin-bottom: 8px;
+    font-size: clamp(22px, 3vw, 30px);
+}
+
+.home-cta p:not(.section-eyebrow) {
+    color: #686868;
+    font-size: 13px;
+}
+
+
+/* ========================================
+   19. HOME - RESPONSIVE
+======================================== */
+
+@media (max-width: 900px) {
+    .hero-container {
+        grid-template-columns: 1fr 0.7fr;
+        gap: 20px;
+        padding-block: 50px;
     }
-} */
 
+    .hero-visual {
+        transform: scale(0.85);
+    }
 
+    .pillar-grid {
+        gap: 12px;
+    }
+
+    .pillar-card {
+        padding-inline: 15px;
+    }
+
+    .home-about-container {
+        gap: 35px;
+    }
+}
+
+@media (max-width: 650px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding-block: 45px 35px;
+    }
+
+    .hero-title {
+        font-size: clamp(30px, 8vw, 40px);
+    }
+
+    .hero-description {
+        font-size: 13px;
+    }
+
+    .hero-visual {
+        width: 250px;
+        transform: scale(0.8);
+        margin-block: -15px;
+    }
+
+    .pillar-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pillar-card {
+        min-height: auto;
+        padding-block: 25px;
+    }
+
+    .home-about-container {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        padding-block: 45px;
+    }
+
+    .home-about-mark {
+        min-height: 140px;
+    }
+
+    .home-cta-container {
+        align-items: flex-start;
+        flex-direction: column;
+        padding-block: 38px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .btn,
+    .pillar-card {
+        transition: none;
+    }
+
+    .pillar-card:hover {
+        transform: none;
+    }
+}
 
