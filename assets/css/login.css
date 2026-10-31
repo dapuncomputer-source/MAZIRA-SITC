@@ -1,0 +1,559 @@
+/* =====================================
+   RESET DAN DASAR
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --hitam: #0B0B0B;
+    --hitam-muda: #171717;
+    --emas: #C9A646;
+    --emas-terang: #E5C66A;
+    --putih: #FFFFFF;
+    --abu: #AFAFAF;
+}
+
+body {
+    min-height: 100vh;
+    background: var(--hitam);
+    color: var(--putih);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button,
+input {
+    font: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* =====================================
+   BACKGROUND
+===================================== */
+.login-page {
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    padding: 25px 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background:
+        radial-gradient(
+            circle at 75% 50%,
+            rgb(201 166 70 / 12%),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 20% 80%,
+            rgb(201 166 70 / 7%),
+            transparent 30%
+        ),
+        var(--hitam);
+}
+
+.login-page::before,
+.login-page::after {
+    content: "";
+    position: absolute;
+    width: 650px;
+    height: 650px;
+    border: 1px solid rgb(201 166 70 / 12%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.login-page::before {
+    top: 15%;
+    left: -350px;
+    animation: backgroundOrbit 35s linear infinite;
+}
+
+.login-page::after {
+    right: -350px;
+    bottom: -20%;
+    animation: backgroundOrbit 45s linear infinite reverse;
+}
+
+@keyframes backgroundOrbit {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* =====================================
+   HEADER
+===================================== */
+.login-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 5;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.brand img {
+    width: 52px;
+    height: 52px;
+    object-fit: contain;
+}
+
+.brand h1 {
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+.brand p {
+    margin-top: 5px;
+    color: var(--emas);
+    font-size: 9px;
+    letter-spacing: 1px;
+}
+
+/* Tombol kembali */
+.exit-btn {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 10px 17px;
+    border: 1px solid rgb(201 166 70 / 45%);
+    border-radius: 6px;
+    color: var(--emas-terang);
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.exit-btn span:first-child {
+    font-size: 23px;
+    line-height: 1;
+}
+
+.exit-btn:hover {
+    background: var(--emas);
+    color: var(--hitam);
+    box-shadow: 0 0 20px rgb(201 166 70 / 25%);
+}
+
+/* =====================================
+   KARTU LOGIN
+===================================== */
+.auth-container {
+    width: min(900px, 100%);
+    min-height: 510px;
+    margin: 45px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    z-index: 2;
+    border: 1px solid rgb(201 166 70 / 65%);
+    border-radius: 15px;
+    overflow: hidden;
+
+    background: rgb(17 17 17 / 95%);
+    box-shadow:
+        0 0 20px rgb(201 166 70 / 15%),
+        0 0 65px rgb(201 166 70 / 8%);
+
+    animation: cardAppear 0.8s ease both;
+}
+
+@keyframes cardAppear {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =====================================
+   PANEL WELCOME
+===================================== */
+.welcome-panel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 45px;
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgb(201 166 70 / 20%),
+            transparent 65%
+        ),
+        #111111;
+}
+
+.welcome-panel::before {
+    content: "";
+    position: absolute;
+    top: -30%;
+    right: -45%;
+    width: 100%;
+    height: 170%;
+    background: linear-gradient(
+        135deg,
+        transparent,
+        rgb(201 166 70 / 13%),
+        transparent
+    );
+    transform: rotate(25deg);
+    animation: goldLight 7s ease-in-out infinite;
+}
+
+@keyframes goldLight {
+    0%, 100% {
+        opacity: 0.3;
+        transform: translateX(-20px) rotate(25deg);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateX(25px) rotate(25deg);
+    }
+}
+
+.welcome-content {
+    position: relative;
+    z-index: 1;
+}
+
+.welcome-logo {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    margin-bottom: 25px;
+    filter: drop-shadow(0 0 12px rgb(201 166 70 / 45%));
+    animation: logoGlow 4s ease-in-out infinite;
+}
+
+@keyframes logoGlow {
+    0%, 100% {
+        filter: drop-shadow(0 0 5px rgb(201 166 70 / 20%));
+    }
+
+    50% {
+        filter: drop-shadow(0 0 20px rgb(201 166 70 / 70%));
+    }
+}
+
+.welcome-label {
+    color: var(--emas);
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.welcome-content h2 {
+    font-size: clamp(27px, 3vw, 38px);
+    line-height: 1.2;
+}
+
+.gold-line {
+    width: 90px;
+    height: 3px;
+    background: var(--emas);
+    margin: 20px 0;
+    box-shadow: 0 0 12px var(--emas);
+}
+
+.welcome-description {
+    max-width: 330px;
+    color: #C4C4C4;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.welcome-motto {
+    margin-top: 28px;
+    color: var(--emas);
+    font-size: 10px;
+    letter-spacing: 1.5px;
+}
+
+/* =====================================
+   PANEL FORM
+===================================== */
+.form-panel {
+    padding: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(145deg, #141414, #080808);
+}
+
+.auth-form {
+    width: 100%;
+    display: none;
+    animation: formAppear 0.5s ease both;
+}
+
+.auth-form.active {
+    display: block;
+}
+
+@keyframes formAppear {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.form-heading {
+    margin-bottom: 28px;
+}
+
+.form-heading span {
+    color: var(--emas);
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.form-heading h2 {
+    font-size: 32px;
+    margin: 9px 0;
+}
+
+.form-heading p {
+    color: var(--abu);
+    font-size: 13px;
+}
+
+/* Input */
+.auth-form > label {
+    display: block;
+    font-size: 12px;
+    margin: 17px 0 8px;
+    color: #E5E5E5;
+}
+
+.input-group {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(201 166 70 / 35%);
+    border-radius: 8px;
+    background: #101010;
+    transition: 0.3s;
+}
+
+.input-group:focus-within {
+    border-color: var(--emas);
+    box-shadow: 0 0 15px rgb(201 166 70 / 12%);
+}
+
+.input-icon {
+    padding-left: 14px;
+    color: var(--emas);
+}
+
+.input-group input {
+    width: 100%;
+    height: 100%;
+    padding: 0 12px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: var(--putih);
+    font-size: 12px;
+}
+
+.input-group input::placeholder {
+    color: #777;
+}
+
+.password-toggle {
+    border: none;
+    background: transparent;
+    color: var(--emas);
+    font-size: 11px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Opsi form */
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin: 17px 0 22px;
+    font-size: 11px;
+    color: var(--abu);
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.remember input {
+    accent-color: var(--emas);
+}
+
+.forgot-link {
+    color: var(--emas);
+}
+
+/* Tombol submit */
+
+.submit-btn {
+    width: 100%;
+    height: 48px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(110deg, #B58B2D, #E4C15C);
+    color: #0B0B0B;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: 0.3s;
+}
+
+.submit-btn span {
+    margin-left: 8px;
+    font-size: 17px;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 25px rgb(201 166 70 / 30%);
+}
+
+/* Ganti login / daftar */
+
+.switch-form {
+    text-align: center;
+    margin-top: 24px;
+    color: var(--abu);
+    font-size: 12px;
+}
+
+.switch-form button {
+    border: none;
+    background: none;
+    color: var(--emas);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.switch-form button:hover,
+.forgot-link:hover {
+    color: var(--emas-terang);
+    text-decoration: underline;
+}
+
+/* =====================================
+   FOOTER
+===================================== */
+
+.login-footer {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #777;
+    font-size: 11px;
+    padding-top: 15px;
+}
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media (max-width: 700px) {
+    .login-page {
+        padding: 20px 5%;
+    }
+
+    .brand img {
+        width: 42px;
+        height: 42px;
+    }
+
+    .brand h1 {
+        font-size: 16px;
+    }
+
+    .brand p {
+        font-size: 7px;
+    }
+
+    .exit-btn {
+        padding: 8px 10px;
+        font-size: 11px;
+    }
+
+    .auth-container {
+        grid-template-columns: 1fr;
+        margin: 35px auto;
+    }
+
+    .welcome-panel {
+        padding: 28px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .welcome-logo {
+        width: 65px;
+        height: 65px;
+        margin-bottom: 12px;
+    }
+
+    .welcome-content h2 {
+        font-size: 25px;
+    }
+
+    .gold-line {
+        margin: 14px auto;
+    }
+
+    .welcome-description {
+        font-size: 12px;
+    }
+
+    .welcome-motto {
+        margin-top: 15px;
+        font-size: 8px;
+    }
+
+    .form-panel {
+        padding: 30px 25px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
