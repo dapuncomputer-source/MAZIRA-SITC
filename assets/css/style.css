@@ -22,7 +22,7 @@
     --warna-border-terang: #E5E5E5;
 
     /* Container dan jarak luar halaman */
-    --jarak-kertas: 5%;
+    --jarak-kertas: 3%;
     --lebar-maksimum: 1440px;
 
     /* Jarak komponen */
@@ -90,10 +90,25 @@ img {
 ======================================== */
 
 .header {
+    position: sticky;
+    top: 0;
     width: 100%;
     background: var(--warna-hitam);
     color: var(--warna-teks-terang);
     z-index: 9999999;
+    animation: navbar-intro 0.9s ease both;
+}
+
+@keyframes navbar-intro {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* ========================================
@@ -422,233 +437,6 @@ img {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ========================================
-   15. FOOTER MAZIRA SITC
-======================================== */
-
-.footer {
-    background: var(--warna-hitam);
-    color: var(--warna-teks-terang);
-    border-top: 2px solid var(--warna-emas);
-}
-
-/* Bagian utama footer */
-
-.footer-main {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr 1fr 1.3fr;
-    gap: 40px;
-    padding-block: 55px 45px;
-}
-
-/* Identitas organisasi */
-
-.footer-brand-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 18px;
-}
-
-.footer-logo {
-    width: 48px;
-    height: 48px;
-    object-fit: contain;
-    flex-shrink: 0;
-}
-
-.footer-brand-name {
-    color: var(--warna-putih);
-    font-size: 19px;
-    font-weight: 800;
-    letter-spacing: 0.8px;
-}
-
-.footer-tagline {
-    max-width: 340px;
-    margin-bottom: 15px;
-    color: #C5C5C5;
-    font-size: 13px;
-    line-height: 1.8;
-}
-
-.footer-motto {
-    color: var(--warna-emas);
-    font-size: 9px;
-    letter-spacing: 0.7px;
-    line-height: 1.8;
-}
-
-/* Kolom footer */
-
-.footer-column h3 {
-    margin-bottom: 20px;
-    color: var(--warna-emas);
-    font-size: 14px;
-    font-weight: 700;
-}
-
-.footer-column ul {
-    list-style: none;
-}
-
-.footer-column li + li {
-    margin-top: 11px;
-}
-
-.footer-column a {
-    color: #C5C5C5;
-    font-size: 12px;
-    transition: color 0.2s ease;
-}
-
-.footer-column a:hover {
-    color: var(--warna-emas);
-}
-
-.footer-contact p {
-    margin-bottom: 18px;
-    color: #C5C5C5;
-    font-size: 12px;
-    line-height: 1.8;
-}
-
-.footer-contact .footer-contact-link {
-    display: inline-block;
-    padding: 9px 14px;
-    border: 1px solid var(--warna-emas);
-    color: var(--warna-emas);
-    transition:
-        background 0.2s ease,
-        color 0.2s ease;
-}
-
-.footer-contact .footer-contact-link:hover {
-    background: var(--warna-emas);
-    color: var(--warna-hitam);
-}
-
-/* Bagian copyright */
-
-.footer-bottom {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    padding-block: 20px;
-    border-top: 1px solid var(--warna-border);
-}
-
-.footer-bottom p,
-.footer-bottom a {
-    color: #AFAFAF;
-    font-size: 11px;
-}
-
-.footer-bottom a:hover {
-    color: var(--warna-emas);
-}
-
-/* ========================================
-   FOOTER TABLET
-======================================== */
-
-@media (max-width: 1000px) {
-    .footer-main {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 35px;
-    }
-}
-
-/* ========================================
-   FOOTER HP
-======================================== */
-
-@media (max-width: 600px) {
-    .footer-main {
-        grid-template-columns: 1fr 1fr;
-        gap: 30px 20px;
-        padding-block: 38px 30px;
-    }
-
-    .footer-brand {
-        grid-column: 1 / -1;
-    }
-
-    .footer-logo {
-        width: 42px;
-        height: 42px;
-    }
-
-    .footer-brand-name {
-        font-size: 17px;
-    }
-
-    .footer-tagline {
-        font-size: 12px;
-    }
-
-    .footer-column h3 {
-        margin-bottom: 14px;
-        font-size: 13px;
-    }
-
-    .footer-column li + li {
-        margin-top: 10px;
-    }
-
-    .footer-column a,
-    .footer-contact p {
-        font-size: 11px;
-    }
-
-    .footer-bottom {
-        align-items: flex-start;
-        flex-direction: column;
-        gap: 8px;
-        padding-block: 18px;
-    }
-}
-
-/* HP sangat kecil */
-
-@media (max-width: 360px) {
-    .footer-main {
-        gap: 25px 14px;
-    }
-
-    .footer-brand-name {
-        font-size: 15px;
-    }
-}
 
 
 
@@ -1600,3 +1388,359 @@ img {
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   ANIMASI PEMBUKA MAZIRA SITC
+========================================= */
+.hero-content {
+    opacity: 0;
+    animation: hero-text-intro 0.95s ease forwards;
+}
+
+
+.hero-content > .hero-eyebrow {
+    animation-delay: 0.25s;
+}
+
+
+.hero-content > .hero-title {
+    animation-delay: 0.4s;
+}
+
+.hero-content > .hero-description {
+    animation-delay: 0.6s;
+}
+
+.hero-content > .hero-actions {
+    animation-delay: 0.8s;
+}
+
+
+
+@keyframes hero-text-intro {
+    from {
+        opacity: 0;
+        transform: translateY(28px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* 3. LOGO MUNCUL DENGAN CAHAYA EMAS */
+.hero-emblem {
+    animation:
+        hero-logo-intro 1.2s ease 0.5s both,
+        logo-glow-pulse 4s ease-in-out 1.7s infinite;
+}
+
+
+
+
+@keyframes hero-logo-intro {
+    from {
+        opacity: 0;
+        transform: scale(0.75);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+
+
+/* 4. HORMATI PENGATURAN REDUCE MOTION */
+@media (prefers-reduced-motion: reduce) {
+    .header,
+    .hero-content > *,
+    .hero-emblem,
+    .hero-emblem img {
+        animation: none !important;
+        opacity: 1;
+        transform: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========================================
+   15. FOOTER MAZIRA SITC
+======================================== */
+
+.footer {
+    background: var(--warna-hitam);
+    color: var(--warna-teks-terang);
+    border-top: 2px solid var(--warna-emas);
+}
+
+/* Bagian utama footer */
+
+.footer-main {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1.3fr;
+    gap: 40px;
+    padding-block: 55px 45px;
+}
+
+/* Identitas organisasi */
+
+.footer-brand-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.footer-logo {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.footer-brand-name {
+    color: var(--warna-putih);
+    font-size: 19px;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+}
+
+.footer-tagline {
+    max-width: 340px;
+    margin-bottom: 15px;
+    color: #C5C5C5;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.footer-motto {
+    color: var(--warna-emas);
+    font-size: 9px;
+    letter-spacing: 0.7px;
+    line-height: 1.8;
+}
+
+/* Kolom footer */
+
+.footer-column h3 {
+    margin-bottom: 20px;
+    color: var(--warna-emas);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column li + li {
+    margin-top: 11px;
+}
+
+.footer-column a {
+    color: #C5C5C5;
+    font-size: 12px;
+    transition: color 0.2s ease;
+}
+
+.footer-column a:hover {
+    color: var(--warna-emas);
+}
+
+.footer-contact p {
+    margin-bottom: 18px;
+    color: #C5C5C5;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.footer-contact .footer-contact-link {
+    display: inline-block;
+    padding: 9px 14px;
+    border: 1px solid var(--warna-emas);
+    color: var(--warna-emas);
+    transition:
+        background 0.2s ease,
+        color 0.2s ease;
+}
+
+.footer-contact .footer-contact-link:hover {
+    background: var(--warna-emas);
+    color: var(--warna-hitam);
+}
+
+/* Bagian copyright */
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding-block: 20px;
+    border-top: 1px solid var(--warna-border);
+}
+
+.footer-bottom p,
+.footer-bottom a {
+    color: #AFAFAF;
+    font-size: 11px;
+}
+
+.footer-bottom a:hover {
+    color: var(--warna-emas);
+}
+
+/* ========================================
+   FOOTER TABLET
+======================================== */
+
+@media (max-width: 1000px) {
+    .footer-main {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 35px;
+    }
+}
+
+/* ========================================
+   FOOTER HP
+======================================== */
+
+@media (max-width: 600px) {
+    .footer-main {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px 20px;
+        padding-block: 38px 30px;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+
+    .footer-logo {
+        width: 42px;
+        height: 42px;
+    }
+
+    .footer-brand-name {
+        font-size: 17px;
+    }
+
+    .footer-tagline {
+        font-size: 12px;
+    }
+
+    .footer-column h3 {
+        margin-bottom: 14px;
+        font-size: 13px;
+    }
+
+    .footer-column li + li {
+        margin-top: 10px;
+    }
+
+    .footer-column a,
+    .footer-contact p {
+        font-size: 11px;
+    }
+
+    .footer-bottom {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 8px;
+        padding-block: 18px;
+    }
+}
+
+/* HP sangat kecil */
+
+@media (max-width: 360px) {
+    .footer-main {
+        gap: 25px 14px;
+    }
+
+    .footer-brand-name {
+        font-size: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   ANIMASI SCROLL BERULANG MAZIRA SITC
+========================================= */
+
+/* Kondisi awal: elemen belum terlihat */
+[data-reveal] {
+    opacity: 0;
+    transform: translateY(35px);
+    filter: blur(5px);
+
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease,
+        filter 0.8s ease;
+
+    will-change: opacity, transform, filter;
+}
+
+/* Kondisi ketika elemen terlihat */
+[data-reveal].is-visible {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+}
+
+/* Hormati pengaturan reduce motion */
+@media (prefers-reduced-motion: reduce) {
+    [data-reveal] {
+        opacity: 1;
+        transform: none;
+        filter: none;
+        transition: none;
+    }
+}
