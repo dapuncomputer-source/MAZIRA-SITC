@@ -1,0 +1,762 @@
+
+/* =========================================
+   HALAMAN TENTANG KAMI - MAZIRA SITC
+========================================= */
+
+.about-page {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* =========================================
+   HERO TENTANG KAMI
+========================================= */
+
+.about-hero {
+    position: relative;
+    background:
+        radial-gradient(
+            circle at 80% 55%,
+            rgba(201, 166, 70, 0.12),
+            transparent 35%
+        ),
+        var(--warna-hitam, #0B0B0B);
+
+    color: #FFFFFF;
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    padding: 90px 0;
+    overflow: hidden;
+}
+
+.about-hero::before {
+    content: "";
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    border: 1px solid rgba(201, 166, 70, 0.12);
+    transform: rotate(45deg);
+    left: -260px;
+    top: 30px;
+    pointer-events: none;
+}
+
+.about-hero-container {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 60px;
+    position: relative;
+    z-index: 1;
+}
+
+.about-hero-content {
+    max-width: 650px;
+}
+
+.about-eyebrow {
+    color: var(--warna-emas, #C9A646);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    margin-bottom: 20px;
+}
+
+.about-hero-title {
+    font-size: clamp(38px, 5vw, 64px);
+    line-height: 1.12;
+    font-weight: 800;
+    margin-bottom: 22px;
+}
+
+.about-hero-title span {
+    display: block;
+    color: var(--warna-emas, #C9A646);
+}
+
+.about-hero-description {
+    color: #E4E0D7;
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 570px;
+}
+
+.about-hero-line {
+    width: 75px;
+    height: 3px;
+    background: var(--warna-emas, #C9A646);
+    margin: 28px 0;
+}
+
+.about-hero-intro {
+    color: #BDBDBD;
+    font-size: 15px;
+    line-height: 1.9;
+    max-width: 550px;
+}
+
+
+/* VISUAL LOGO */
+
+.about-hero-visual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 350px;
+}
+
+.about-logo-frame {
+    position: relative;
+    width: 230px;
+    height: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(201, 166, 70, 0.55);
+    border-radius: 50%;
+    background: rgba(201, 166, 70, 0.025);
+    box-shadow:
+        0 0 35px rgba(201, 166, 70, 0.12),
+        inset 0 0 35px rgba(201, 166, 70, 0.06);
+}
+
+.about-logo-glow {
+    position: absolute;
+    inset: -25px;
+    border-radius: 50%;
+    background: rgba(201, 166, 70, 0.08);
+    filter: blur(35px);
+    z-index: -1;
+}
+
+.about-logo-frame img {
+    width: 125px;
+    height: 125px;
+    object-fit: contain;
+    position: relative;
+    z-index: 1;
+}
+
+.about-visual-caption {
+    color: var(--warna-emas, #C9A646);
+    font-size: 9px;
+    letter-spacing: 2px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+/* =========================================
+   PROFIL ORGANISASI
+========================================= */
+
+.about-profile {
+    background: var(--warna-latar, #F5F3EE);
+    color: #171717;
+    padding: 100px 0;
+}
+
+.about-section-heading {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 65px;
+}
+
+.about-section-heading h2 {
+    font-size: clamp(30px, 4vw, 42px);
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+
+.about-section-heading > p:last-child {
+    color: #6B6B6B;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.about-profile-grid {
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    gap: 65px;
+    align-items: start;
+    border: 2px solid red;
+}
+
+.about-profile-content h3 {
+    color: #171717;
+    font-size: clamp(25px, 3vw, 34px);
+    line-height: 1.35;
+    margin-bottom: 25px;
+}
+
+.about-profile-content p {
+    color: #626262;
+    font-size: 15px;
+    line-height: 2;
+    margin-bottom: 18px;
+    text-align: justify;
+}
+
+
+/* PANEL INFORMASI */
+
+.about-profile-facts {
+    background: #FFFFFF;
+    border: 1px solid rgba(11, 11, 11, 0.08);
+    border-top: 3px solid var(--warna-emas, #C9A646);
+    padding: 30px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.045);
+}
+
+.about-fact {
+    padding: 17px 0;
+    border-bottom: 1px solid #EAE7E0;
+}
+
+.about-fact:first-child {
+    padding-top: 0;
+}
+
+.about-fact:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.about-fact-label {
+    display: block;
+    color: #A88732;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 8px;
+}
+
+.about-fact h3,
+.about-fact p {
+    color: #222222;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+.about-fact small {
+    display: block;
+    color: #777777;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+
+
+
+/* =========================================
+   PENGGABUNGAN KONTEN PROFIL
+========================================= */
+
+.about-profile-content .profile-introduction {
+    margin-top: 30px;
+    padding-top: 25px;
+    border-top: 1px solid var(--warna-border-terang);
+}
+
+.about-profile-content .profile-introduction h4 {
+    color: var(--warna-teks);
+    font-size: 23px;
+    line-height: 1.4;
+    margin: 12px 0 16px;
+}
+
+.about-profile-content .profile-introduction p {
+    color: #626262;
+    line-height: 1.85;
+    margin-bottom: 14px;
+}
+
+.about-profile-content .profile-quote {
+    margin-top: 25px;
+}
+
+.about-profile-content .profile-quote p {
+    color: #FFFFFF;
+    line-height: 1.8;
+}
+
+
+
+
+
+/* =========================================
+   RESPONSIVE - TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .about-hero-container {
+        grid-template-columns: 1fr 0.7fr;
+        gap: 30px;
+    }
+
+    .about-logo-frame {
+        width: 190px;
+        height: 190px;
+    }
+
+    .about-logo-frame img {
+        width: 105px;
+        height: 105px;
+    }
+
+    .about-profile-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+}
+
+
+/* =========================================
+   RESPONSIVE - MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+    .about-hero {
+        min-height: auto;
+        padding: 75px 0;
+    }
+
+    .about-hero-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 45px;
+    }
+
+    .about-hero-content {
+        margin: 0 auto;
+    }
+
+    .about-hero-title {
+        font-size: clamp(36px, 9vw, 48px);
+    }
+
+    .about-hero-description {
+        font-size: 16px;
+    }
+
+    .about-hero-line {
+        margin: 25px auto;
+    }
+
+    .about-hero-visual {
+        min-height: 240px;
+    }
+
+    .about-logo-frame {
+        width: 175px;
+        height: 175px;
+    }
+
+    .about-logo-frame img {
+        width: 95px;
+        height: 95px;
+    }
+
+    .about-profile {
+        padding: 75px 0;
+    }
+
+    .about-section-heading {
+        margin-bottom: 45px;
+    }
+
+    .about-profile-content p {
+        text-align: left;
+    }
+
+    .about-profile-facts {
+        padding: 23px;
+    }
+
+
+    .about-profile-content .profile-introduction {
+        margin-top: 25px;
+        padding-top: 20px;
+    }
+
+    .about-profile-content .profile-introduction h4 {
+        font-size: 20px;
+    }
+
+}
+
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .about-page *,
+    .about-page *::before,
+    .about-page *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   PROFIL DETAIL MAZIRA SITC
+========================================= */
+
+.profile-detail,
+.sitc-framework,
+.profile-vision,
+.profile-values,
+.profile-activities {
+    padding: 90px 0;
+}
+
+.profile-detail {
+    background: var(--warna-latar);
+}
+
+.profile-introduction {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.profile-eyebrow {
+    display: inline-block;
+    color: var(--warna-emas);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.profile-introduction h2,
+.profile-section-heading h2 {
+    color: var(--warna-hitam);
+    font-size: clamp(28px, 3vw, 38px);
+    line-height: 1.3;
+    margin-bottom: 22px;
+}
+
+.profile-introduction p,
+.sitc-card p,
+.vision-card p,
+.mission-card p,
+.value-item p,
+.operational-card p {
+    color: var(--warna-teks-sekunder);
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 16px;
+}
+
+.profile-quote {
+    max-width: 900px;
+    margin: 55px auto 0;
+    padding: 35px 40px;
+    background: var(--warna-hitam);
+    border-left: 4px solid var(--warna-emas);
+}
+
+.profile-quote span {
+    color: var(--warna-emas);
+    font-size: 48px;
+    line-height: 1;
+}
+
+.profile-quote p {
+    color: var(--warna-putih);
+    font-size: 19px;
+    line-height: 1.8;
+    font-weight: 500;
+}
+
+
+/* JUDUL SETIAP BAGIAN */
+
+.profile-section-heading {
+    max-width: 700px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.profile-section-heading p {
+    color: var(--warna-teks-sekunder);
+    line-height: 1.8;
+}
+
+
+/* KERANGKA SITC */
+
+.sitc-framework,
+.profile-activities {
+    background: var(--warna-hitam);
+}
+
+.sitc-framework .profile-section-heading h2,
+.profile-activities .profile-section-heading h2 {
+    color: var(--warna-putih);
+}
+
+.sitc-framework .profile-section-heading p,
+.profile-activities .profile-section-heading p {
+    color: var(--warna-teks-sekunder);
+}
+
+.sitc-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.sitc-card {
+    padding: 35px 30px;
+    background: #151515;
+    border: 1px solid rgb(201 166 70 / 25%);
+    border-top: 3px solid var(--warna-emas);
+}
+
+.sitc-code {
+    display: inline-block;
+    color: var(--warna-emas);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.sitc-card h3 {
+    color: var(--warna-putih);
+    font-size: 23px;
+    margin-bottom: 8px;
+}
+
+.sitc-card h4 {
+    color: var(--warna-emas);
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.sitc-card p {
+    color: #B8B8B8;
+    font-size: 14px;
+}
+
+
+/* VISI DAN MISI */
+
+.profile-vision,
+.profile-values {
+    background: var(--warna-latar);
+}
+
+.vision-card {
+    max-width: 900px;
+    margin: 0 auto 30px;
+    padding: 40px;
+    background: var(--warna-hitam);
+    border-top: 4px solid var(--warna-emas);
+    text-align: center;
+}
+
+.vision-card h3 {
+    color: var(--warna-emas);
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.vision-card p {
+    color: #D0D0D0;
+    margin-bottom: 0;
+}
+
+.mission-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.mission-card {
+    padding: 30px;
+    background: #FFFFFF;
+    border: 1px solid #E8E5DE;
+}
+
+.mission-number {
+    color: var(--warna-emas);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.mission-card h3 {
+    color: var(--warna-hitam);
+    font-size: 19px;
+    margin: 18px 0 12px;
+}
+
+
+/* LIMA NILAI UTAMA */
+
+.values-list {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.value-item {
+    display: grid;
+    grid-template-columns: 65px 1fr;
+    gap: 20px;
+    padding: 27px 0;
+    border-bottom: 1px solid #DEDAD0;
+}
+
+.value-number {
+    color: var(--warna-emas);
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.value-item h3 {
+    color: var(--warna-hitam);
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+.value-item h3 small {
+    color: var(--warna-emas-hover);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.value-item p {
+    margin-bottom: 0;
+}
+
+
+/* KEGIATAN OPERASIONAL */
+
+.operational-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.operational-card {
+    padding: 32px;
+    background: #151515;
+    border: 1px solid rgb(201 166 70 / 25%);
+}
+
+.operational-number {
+    color: var(--warna-emas);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.operational-card h3 {
+    color: var(--warna-putih);
+    font-size: 21px;
+    margin: 16px 0 10px;
+}
+
+.operational-subtitle {
+    display: block;
+    color: var(--warna-emas);
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+
+.operational-card p {
+    color: #B8B8B8;
+    margin-bottom: 0;
+}
+
+
+
+/* =========================================
+   PERBAIKAN KETERBACAAN TEKS
+========================================= */
+
+.profile-detail .profile-introduction p,
+.profile-vision .profile-section-heading p,
+.profile-values .profile-section-heading p,
+.mission-card p,
+.value-item p {
+    color: #626262;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+    .sitc-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mission-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .profile-detail,
+    .sitc-framework,
+    .profile-vision,
+    .profile-values,
+    .profile-activities {
+        padding: 65px 0;
+    }
+
+    .profile-quote {
+        padding: 25px;
+    }
+
+    .profile-quote p {
+        font-size: 16px;
+    }
+
+    .vision-card {
+        padding: 28px 22px;
+    }
+
+    .value-item {
+        grid-template-columns: 42px 1fr;
+        gap: 12px;
+    }
+
+    .operational-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+
+
