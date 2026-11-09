@@ -63,6 +63,15 @@
 
     
     "profile": {
+        "hero_eyebrow": "PROFILE MAZIRA",
+        "hero_title": "About",
+        "hero_brand": "MAZIRA SITC",
+        "hero_description": "Majlis Zikir Rasulullah: Spiritual, Intellectual and Technological Code.",
+        "hero_intro" : "Bringing together spiritual depth, intellectual sharpness, and mastery of technology as the foundation for building the next generation.",
+
+
+
+
         "eyebrow": "ORGANIZATIONAL IDENTITY",
         "title": "MAZIRA SITC Profile",
         "description": "Discover the background, identity, and development direction of MAZIRA SITC.",
