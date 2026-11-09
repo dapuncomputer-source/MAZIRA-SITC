@@ -237,11 +237,16 @@ a {
     z-index: 1;
 }
 
+.welcome-logo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
 .welcome-logo {
     width: 90px;
     height: 90px;
     object-fit: contain;
-    margin-bottom: 25px;
     filter: drop-shadow(0 0 12px rgb(201 166 70 / 45%));
     animation: logoGlow 4s ease-in-out infinite;
 }
@@ -261,11 +266,13 @@ a {
     font-size: 12px;
     letter-spacing: 3px;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .welcome-content h2 {
     font-size: clamp(27px, 3vw, 38px);
     line-height: 1.2;
+    text-align: center;
 }
 
 .gold-line {
@@ -274,6 +281,7 @@ a {
     background: var(--emas);
     margin: 20px 0;
     box-shadow: 0 0 12px var(--emas);
+    
 }
 
 .welcome-description {
@@ -281,6 +289,7 @@ a {
     color: #C4C4C4;
     font-size: 14px;
     line-height: 1.8;
+    text-align: center;
 }
 
 .welcome-motto {
@@ -288,7 +297,21 @@ a {
     color: var(--emas);
     font-size: 10px;
     letter-spacing: 1.5px;
+    text-align: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* =====================================
    PANEL FORM
@@ -327,20 +350,17 @@ a {
     margin-bottom: 28px;
 }
 
-.form-heading span {
-    color: var(--emas);
-    font-size: 10px;
-    letter-spacing: 2px;
-}
-
 .form-heading h2 {
     font-size: 32px;
     margin: 9px 0;
+    text-align: center;
 }
 
 .form-heading p {
     color: var(--abu);
     font-size: 13px;
+    text-align: center;
+
 }
 
 /* Input */
@@ -359,6 +379,7 @@ a {
     border-radius: 8px;
     background: #101010;
     transition: 0.3s;
+    
 }
 
 .input-group:focus-within {
@@ -380,6 +401,7 @@ a {
     background: transparent;
     color: var(--putih);
     font-size: 12px;
+    
 }
 
 .input-group input::placeholder {
@@ -393,6 +415,7 @@ a {
     font-size: 11px;
     padding: 10px;
     cursor: pointer;
+    
 }
 
 /* Opsi form */

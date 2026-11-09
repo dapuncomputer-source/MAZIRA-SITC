@@ -54,6 +54,120 @@
         "tentang_kami": "About Us",
         "kontak": "Contact"
     },
+
+
+
+
+
+
+
+    
+    "profile": {
+        "eyebrow": "ORGANIZATIONAL IDENTITY",
+        "title": "MAZIRA SITC Profile",
+        "description": "Discover the background, identity, and development direction of MAZIRA SITC.",
+    
+        "intro_title": "Building a Generation Through Spirituality, Intellect, and Technology.",
+        "intro_p1": "MAZIRA SITC is a transformative organization based in Bandung, West Java. It was founded by Dadang Aji Permana on 27 Rajab 1446 AH, or January 27, 2025.",
+        "intro_p2": "MAZIRA SITC was established with a mandate to harmonize spiritual depth, intellectual insight, and mastery of modern technology, particularly in the field of software engineering.",
+        "intro_p3": "SITC's identity serves as both the ethical foundation and the direction for developing the organization in creating a generation that balances religious values, thinking skills, and technological proficiency.",
+    
+
+
+        "philosophy_eyebrow": "ORGANIZATIONAL PHILOSOPHY",
+        "philosophy_title": "The Meaning Behind the Identity of MAZIRA SITC",
+        "philosophy_p1": "MAZIRA SITC combines the identity of Majlis Zikir Rasulullah with the framework of Spiritual, Intellectual, and Technological Code. This identity reflects both its spiritual foundation and organizational direction.",
+        "philosophy_p2": "The SITC acronym is rooted in its founder's moral conviction to actively contribute to empowering Indonesia's future generations. This commitment is pursued through intellectual development and mastery of technology based on contemporary programming.",
+        "philosophy_p3": "These three elements complement one another: spirituality provides the foundation of values, intellectual development sharpens thinking, and technology serves as a means to create and contribute to society.",
+        "quote": "At MAZIRA SITC, our mission goes beyond developing spiritual practitioners; we build intellectual leaders and technology architects guided by divine enlightenment.",
+    
+
+
+        "fact_organization": "Majlis Zikir Rasulullah",
+        "fact_fullname": "FULL NAME",
+        "fact_founder": "FOUNDER",
+        "fact_date": "DATE OF ESTABLISHMENT",
+        "fact_location": "LOCATION",
+        "fullname": "Majlis Zikir Rasulullah",
+        "founder": "Dadang Aji Permana",
+        "date": "January 27, 2025",
+        "hijri_date": "27 Rajab 1446 AH",
+        "location": "Bandung, West Java",
+    
+
+
+
+
+
+
+        "framework_eyebrow": "ORGANIZATIONAL FRAMEWORK",
+        "framework_title": "The Three Core Frameworks of SITC",
+        "framework_description": "Three foundations that shape the spiritual, intellectual, and technological development of MAZIRA SITC.",
+    
+        "spiritual_title": "Spiritual Code",
+        "spiritual_subtitle": "The Foundation of Peace",
+        "spiritual_p1": "We apply a methodology of remembrance (dhikr) rooted in authentic Islamic teachings. Its primary purpose is to cultivate a profound connection with Allah SWT through the shahada and devotion to Prophet Muhammad SAW.",
+        "spiritual_p2": "Within this framework, spiritual practice becomes an important means of building mental resilience and psychological clarity in the modern era.",
+    
+        "intellectual_title": "Intellectual Code",
+        "intellectual_subtitle": "Integrity of Thought",
+        "intellectual_p1": "Recognizing that morality without intellect lacks capability, while intellect without morality loses direction, MAZIRA SITC emphasizes intellectual integrity among its members.",
+        "intellectual_p2": "We foster critical thinking and a continuous pursuit of knowledge, encompassing both general and religious studies, to contribute to national progress.",
+    
+        "technology_title": "Technology Code",
+        "technology_subtitle": "Mastering the Future",
+        "technology_p1": "Recognizing that the future global landscape is shaped by code, MAZIRA SITC empowers its members through specialized mastery of Software Engineering.",
+        "technology_p2": "This learning approach aims to develop programmers who are not only technically excellent but also firmly committed to ethical and moral responsibility.",
+    
+        "vision_eyebrow": "DIRECTION AND PURPOSE",
+        "vision_title": "Vision and Mission of MAZIRA SITC",
+        "vision_description": "The organizational direction for fostering balanced human development.",
+        "vision_label": "MAZIRA SITC VISION",
+        "vision_heading": "Becoming a Global Beacon of Enlightenment",
+        "vision_text": "To become a global beacon of enlightenment where spiritual wisdom, intellectual excellence, and technological sophistication converge for the advancement of humanity.",
+    
+        "mission1_title": "Cultivating Inner Peace",
+        "mission1_text": "Guiding people toward inner peace through disciplined dhikr and awareness of the Divine.",
+        "mission2_title": "Bridging Disciplines",
+        "mission2_text": "Integrating religious knowledge with modern scientific inquiry to encourage a comprehensive perspective.",
+        "mission3_title": "Promoting Digital Empowerment",
+        "mission3_text": "Equipping individuals with advanced programming and Software Engineering competencies to support economic independence and innovation.",
+    
+        "values_eyebrow": "ORGANIZATIONAL PRINCIPLES",
+        "values_title": "The Five Core Values of MAZIRA SITC",
+        "values_description": "Core values that form the foundation of all organizational initiatives and activities.",
+    
+        "value1_title": "Divine Awareness",
+        "value1_subtitle": "Ihsan",
+        "value1_text": "Approaching every endeavor with a deep awareness of Divine oversight, combining spiritual mindfulness with the highest standards of professional quality.",
+        "value2_title": "Intellectual Integrity",
+        "value2_subtitle": "Al-Amanah",
+        "value2_text": "Upholding scientific honesty while integrating religious knowledge with modern science.",
+        "value3_title": "Technological Excellence",
+        "value3_subtitle": "Itqan",
+        "value3_text": "Committing to precision and professionalism in Software Engineering to create secure and impactful solutions.",
+        "value4_title": "Harmonious Integration",
+        "value4_subtitle": "Tawazun",
+        "value4_text": "Aligning external technological progress with inner spiritual tranquility as an integrated whole.",
+        "value5_title": "Service to Humanity",
+        "value5_subtitle": "Khidmah",
+        "value5_text": "Using technology and knowledge to address real challenges and provide meaningful benefits to society.",
+    
+        "activities_eyebrow": "ORGANIZATIONAL IMPLEMENTATION",
+        "activities_title": "Operational Activities",
+        "activities_description": "MAZIRA SITC carries out its work through four main operational pillars.",
+    
+        "activity1_title": "Majlis Zikir",
+        "activity1_text": "Structured spiritual purification sessions and guidance based on Islamic teachings.",
+        "activity2_title": "MAZIRA Academy",
+        "activity2_subtitle": "Technology Division",
+        "activity2_text": "A specialized training center for developing logic-based technology and programming skills.",
+        "activity3_title": "Intellectual Forum",
+        "activity3_text": "A platform for bringing together faith, science, and contemporary global challenges.",
+        "activity4_title": "SITC Youth Empowerment",
+        "activity4_text": "A strategic character-building program that prepares young generations to compete at the global level."
+    },
+
     
 
 

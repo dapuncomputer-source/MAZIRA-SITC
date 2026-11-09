@@ -181,7 +181,6 @@
     grid-template-columns: 1.3fr 0.7fr;
     gap: 65px;
     align-items: start;
-    border: 2px solid red;
 }
 
 .about-profile-content h3 {

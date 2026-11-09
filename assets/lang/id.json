@@ -1,73 +1,175 @@
 
 
 
-{
+    {
 
 
-    "navbar": {
-        "tagline": "Memadukan kearifan ilahi,  ketajaman pikiran, dan keahlian digital",
-        "brand_description": "SPIRITUAL • INTELLECTUAL • TECHNOLOGICAL CODE",
-        "beranda": "Beranda",
-        "tentang_kami": "Tentang kami",
-        "layanan": "Layanan",
-        "aktivitas": "Aktivitas SITC",
-        "kontak": "Kontak",
-        "login": "Login"
-    },
-
-
-
-
-
-    "home": {
-        "hero_eyebrow": "SPIRITUAL • INTELEKTUAL • TECHNOLOGICAL CODE",
-        "hero_title_line1": "Menyelaraskan Nilai,",
-        "hero_title_line2": "Membangun Masa Depan.",
-        "hero_description": "Menghubungkan kekuatan spiritual, ketajaman intelektual, dan inovasi teknologi untuk menghadirkan perubahan yang bermakna.",
-        "hero_explore": "Jelajahi MAZIRA",
-        "hero_about": "Tentang Kami",
+        "navbar": {
+            "tagline": "Memadukan kearifan ilahi,  ketajaman pikiran, dan keahlian digital",
+            "brand_description": "SPIRITUAL • INTELLECTUAL • TECHNOLOGICAL CODE",
+            "beranda": "Beranda",
+            "tentang_kami": "Tentang kami",
+            "layanan": "Layanan",
+            "aktivitas": "Aktivitas SITC",
+            "kontak": "Kontak",
+            "login": "Login"
+        },
 
 
 
-        "pillars_eyebrow": "LANDASAN MAZIRA",
-        "pillars_title": "Tiga Pilar MAZIRA",
-        "pillars_description": "Tiga pilar utama yang menjadi fondasi untuk membentuk generasi unggul dan berdaya saing di era modern.",
-        "pillar_spiritual_title": "Spiritual",
-        "pillar_spiritual_description": "Menumbuhkan nilai, karakter, dan kedekatan kepada Sang Pencipta.",
-        "pillar_intellectual_title": "Intelektual",
-        "pillar_intellectual_description": "Mengasah ilmu, logika, dan wawasan untuk menghadapi tantangan zaman.",
-        "pillar_technology_title": "Teknologi",
-        "pillar_technology_description": "Mendorong inovasi dan pemanfaatan teknologi untuk kemaslahatan bersama.",
+
+
+        "home": {
+            "hero_eyebrow": "SPIRITUAL • INTELEKTUAL • TECHNOLOGICAL CODE",
+            "hero_title_line1": "Menyelaraskan Nilai,",
+            "hero_title_line2": "Membangun Masa Depan.",
+            "hero_description": "Menghubungkan kekuatan spiritual, ketajaman intelektual, dan inovasi teknologi untuk menghadirkan perubahan yang bermakna.",
+            "hero_explore": "Jelajahi MAZIRA",
+            "hero_about": "Tentang Kami",
+
+
+
+            "pillars_eyebrow": "LANDASAN MAZIRA",
+            "pillars_title": "Tiga Pilar MAZIRA",
+            "pillars_description": "Tiga pilar utama yang menjadi fondasi untuk membentuk generasi unggul dan berdaya saing di era modern.",
+            "pillar_spiritual_title": "Spiritual",
+            "pillar_spiritual_description": "Menumbuhkan nilai, karakter, dan kedekatan kepada Sang Pencipta.",
+            "pillar_intellectual_title": "Intelektual",
+            "pillar_intellectual_description": "Mengasah ilmu, logika, dan wawasan untuk menghadapi tantangan zaman.",
+            "pillar_technology_title": "Teknologi",
+            "pillar_technology_description": "Mendorong inovasi dan pemanfaatan teknologi untuk kemaslahatan bersama.",
+            
+            
+            
+            "about_eyebrow": "MENGENAL KAMI",
+            "about_title": "Bertumbuh dengan Nilai, Bergerak dengan Ilmu.",
+            "about_description": "MAZIRA SITC mengangkat keterpaduan spiritual, intelektual, dan teknologi sebagai landasan untuk belajar, berkarya, dan memberikan manfaat.",
+            "about_link": "Kenali MAZIRA lebih dekat",
+            "cta_eyebrow": "MELANGKAH BERSAMA",
+            "cta_title": "Mari Bangun Perubahan yang Bermakna.",
+            "cta_description": "Jelajahi gagasan, layanan, dan aktivitas MAZIRA SITC.",
+            "cta_button": "Jelajahi Aktivitas",
+            "tentang_kami": "Tentang Kami",
+            "kontak": "Kontak"
+        },
+
+
+
+
+
+        "profile": {
+            "eyebrow": "IDENTITAS ORGANISASI",
+            "title": "Profil MAZIRA SITC",
+            "description": "Mengenal latar belakang, identitas, dan arah pengembangan MAZIRA SITC.",
+
+            "intro_title": "Membangun Generasi melalui Spiritual, Intelektual, dan Teknologi.",
+            "intro_p1": "MAZIRA SITC merupakan lembaga transformatif yang berkedudukan di Bandung, Jawa Barat. Organisasi ini didirikan oleh Dadang Aji Permana pada 27 Rajab 1446 H atau 27 Januari 2025.",
+            "intro_p2": "MAZIRA SITC dibangun dengan mandat untuk menyelaraskan kedalaman spiritual, ketajaman intelektual, dan penguasaan teknologi modern, khususnya dalam bidang rekayasa perangkat lunak.",
+            "intro_p3": "Identitas SITC menjadi landasan etis sekaligus arah pengembangan organisasi dalam membangun generasi yang memiliki keseimbangan nilai keagamaan, kemampuan berpikir, dan kecakapan teknologi.",
+
+            "philosophy_eyebrow": "FILOSOFI ORGANISASI",
+            "philosophy_title": "Makna di Balik Identitas MAZIRA SITC",
+            "philosophy_p1": "MAZIRA SITC merupakan identitas yang memadukan Majlis Zikir Rasulullah dengan kerangka Spiritual, Intellectual, and Technological Code. Identitas ini mencerminkan landasan spiritual sekaligus arah pengembangan organisasi.",
+            "philosophy_p2": "Akronim SITC dirumuskan berdasarkan keyakinan moral pendirinya untuk berpartisipasi aktif dalam memberdayakan generasi masa depan Indonesia. Upaya tersebut diwujudkan melalui pengembangan intelektual dan penguasaan teknologi berbasis pemrograman kontemporer.",
+            "philosophy_p3": "Ketiga unsur tersebut saling melengkapi: spiritualitas menjadi landasan nilai, intelektualitas membentuk ketajaman berpikir, dan teknologi menjadi sarana untuk berkarya serta memberikan manfaat bagi masyarakat.",
+            "quote": "Di MAZIRA SITC, misi kami melampaui pengembangan praktisi spiritual; kami membangun pemimpin intelektual dan arsitek teknologi yang dipandu oleh pencerahan ilahi.",
+
+            "fact_organization": "Majlis Zikir Rasulullah",
+            "fact_fullname": "NAMA LENGKAP",
+            "fact_founder": "Dadang Aji Permana",
+            "fact_date": "TANGGAL PENDIRIAN",
+            "fact_location": "KEDUDUKAN",
+            "fullname": "Majlis Zikir Rasulullah",
+            "founder": "Dadang Aji Permana",
+            "date": "27 Januari 2025",
+            "hijri_date": "27 Rajab 1446 H",
+            "location": "Bandung, Jawa Barat",
+
+            "framework_eyebrow": "KERANGKA ORGANISASI",
+            "framework_title": "Tiga Kerangka Utama SITC",
+            "framework_description": "Tiga landasan yang membentuk arah pengembangan spiritual, intelektual, dan teknologi MAZIRA SITC.",
+
+            "spiritual_title": "Kode Spiritual",
+            "spiritual_subtitle": "Dasar Kedamaian",
+            "spiritual_p1": "Kami menerapkan metodologi zikir yang berlandaskan ajaran Islam yang autentik. Tujuan utamanya adalah menumbuhkan kedekatan yang mendalam kepada Allah SWT melalui syahadat dan pengabdian kepada Nabi Muhammad SAW.",
+            "spiritual_p2": "Dalam kerangka ini, praktik spiritual menjadi sarana penting untuk membangun ketahanan mental dan kejernihan psikologis di era modern.",
+
+            "intellectual_title": "Kode Intelektual",
+            "intellectual_subtitle": "Integritas Pikiran",
+            "intellectual_p1": "Menyadari bahwa moral tanpa akal tidak memiliki kemampuan yang memadai, sedangkan akal tanpa moral kehilangan arah, MAZIRA SITC menekankan integritas intelektual di antara para anggotanya.",
+            "intellectual_p2": "Kami menumbuhkan kemampuan berpikir kritis dan semangat menuntut ilmu secara berkelanjutan, baik ilmu umum maupun ilmu keagamaan, untuk berkontribusi pada kemajuan bangsa.",
+
+            "technology_title": "Kode Teknologi",
+            "technology_subtitle": "Penguasaan Masa Depan",
+            "technology_p1": "Menyadari bahwa lanskap global masa depan dibentuk melalui kode, MAZIRA SITC memberdayakan anggotanya melalui penguasaan khusus dalam bidang Rekayasa Perangkat Lunak.",
+            "technology_p2": "Pendekatan pembelajaran ini diarahkan untuk menghasilkan programmer yang tidak hanya unggul secara teknis, tetapi juga memiliki komitmen teguh terhadap tanggung jawab etis dan moral.",
+
+            
+            "vision_eyebrow": "ARAH DAN TUJUAN",
+            "vision_title": "Visi dan Misi MAZIRA SITC",
+            "vision_description": "Landasan arah organisasi dalam mewujudkan pengembangan manusia yang seimbang.",
+            "vision_label": "VISI MAZIRA SITC",
+            "vision_heading": "Menjadi Mercusuar Pencerahan Global",
+            "vision_text": "Menjadi mercusuar pencerahan global tempat kebijaksanaan spiritual, keunggulan intelektual, dan kecanggihan teknologi berpadu untuk kemajuan umat manusia.",
+
+            "mission1_title": "Menciptakan Ketenteraman",
+            "mission1_text": "Membimbing masyarakat menuju kedamaian batin melalui zikir yang disiplin dan kesadaran ilahi.",
+            "mission2_title": "Menjembatani Disiplin Ilmu",
+            "mission2_text": "Mengintegrasikan pengetahuan agama dengan penyelidikan ilmiah modern untuk mendorong perspektif yang menyeluruh.",
+            "mission3_title": "Mendorong Pemberdayaan Digital",
+            "mission3_text": "Membekali individu dengan kompetensi pemrograman tingkat lanjut dan Rekayasa Perangkat Lunak untuk mendukung kemandirian ekonomi dan inovasi.",
+
+            "values_eyebrow": "PRINSIP ORGANISASI",
+            "values_title": "Lima Nilai Utama MAZIRA SITC",
+            "values_description": "Nilai-nilai inti yang menjadi dasar seluruh inisiatif dan kegiatan organisasi.",
+
+            "value1_title": "Kesadaran Ilahi",
+            "value1_subtitle": "Ihsan",
+            "value1_text": "Menjalankan setiap usaha dengan kesadaran mendalam akan pengawasan Ilahi, memadukan kesadaran spiritual dengan standar kualitas profesional tertinggi.",
+            "value2_title": "Integritas Intelektual",
+            "value2_subtitle": "Al-Amanah",
+            "value2_text": "Menjunjung tinggi kejujuran ilmiah dalam mengintegrasikan pengetahuan keagamaan dan ilmu pengetahuan modern.",
+            "value3_title": "Keunggulan Teknologi",
+            "value3_subtitle": "Itqan",
+            "value3_text": "Berkomitmen pada ketelitian dan profesionalisme dalam Rekayasa Perangkat Lunak untuk menciptakan solusi yang aman dan berdampak.",
+            "value4_title": "Integrasi Harmonis",
+            "value4_subtitle": "Tawazun",
+            "value4_text": "Menyelaraskan kemajuan teknologi eksternal dengan ketenangan spiritual internal sebagai satu kesatuan yang utuh.",
+            "value5_title": "Pelayanan bagi Kemanusiaan",
+            "value5_subtitle": "Khidmah",
+            "value5_text": "Memanfaatkan teknologi dan pengetahuan sebagai sarana untuk mengatasi tantangan nyata dan memberikan manfaat bagi masyarakat.",
+
+            "activities_eyebrow": "IMPLEMENTASI ORGANISASI",
+            "activities_title": "Kegiatan Operasional",
+            "activities_description": "MAZIRA SITC menjalankan kegiatannya melalui empat pilar operasional utama.",
+
+            "activity1_title": "Majlis Zikir",
+            "activity1_text": "Sesi penyucian spiritual dan bimbingan yang terstruktur berdasarkan ajaran Islam.",
+            "activity2_title": "MAZIRA Academy",
+            "activity2_subtitle": "Divisi Teknologi",
+            "activity2_text": "Pusat pelatihan khusus untuk pengembangan teknologi berbasis logika dan pemrograman.",
+            "activity3_title": "Forum Intelektual",
+            "activity3_text": "Platform untuk menyintesiskan iman, sains, dan tantangan global kontemporer.",
+            "activity4_title": "Pemberdayaan Pemuda SITC",
+            "activity4_text": "Program strategis pembentukan karakter untuk mempersiapkan generasi muda agar kompetitif di tingkat global."
+        },
+
+
+
+
+
+
+        "footer": {
+            "hero_description": "Menyelaraskan Kearifan Ilahi, Ketajaman Intelektual, dan Keunggulan Digital.",
+            "hero_explore": "Jelajahi MAZIRA",
+            "hero_about": "Tentang Kami",
+            "footer_explore":"Jelajahi",
+            "footer_information":"Informasi",
+            "footer_contact":"Hubungi Kami",
+            "footer_contact_description": "Untuk informasi dan kerja sama, silakan hubungi pengelola MAZIRA SITC.",
+            "footer_manager": "Akses Pengelola",
+            "footer_copyright": "© 2026 MAZIRA SITC. Hak cipta dilindungi.",
+            "footer_privacy": "Kebijakan Privasi"
+        }
         
-        
-        
-        "about_eyebrow": "MENGENAL KAMI",
-        "about_title": "Bertumbuh dengan Nilai, Bergerak dengan Ilmu.",
-        "about_description": "MAZIRA SITC mengangkat keterpaduan spiritual, intelektual, dan teknologi sebagai landasan untuk belajar, berkarya, dan memberikan manfaat.",
-        "about_link": "Kenali MAZIRA lebih dekat",
-        "cta_eyebrow": "MELANGKAH BERSAMA",
-        "cta_title": "Mari Bangun Perubahan yang Bermakna.",
-        "cta_description": "Jelajahi gagasan, layanan, dan aktivitas MAZIRA SITC.",
-        "cta_button": "Jelajahi Aktivitas",
-        "tentang_kami": "Tentang Kami",
-        "kontak": "Kontak"
-    },
-    
-
-
-
-
-    "footer": {
-        "hero_description": "Menyelaraskan Kearifan Ilahi, Ketajaman Intelektual, dan Keunggulan Digital.",
-        "hero_explore": "Jelajahi MAZIRA",
-        "hero_about": "Tentang Kami",
-        "footer_explore":"Jelajahi",
-        "footer_information":"Informasi",
-        "footer_contact":"Hubungi Kami",
-        "footer_contact_description": "Untuk informasi dan kerja sama, silakan hubungi pengelola MAZIRA SITC.",
-        "footer_manager": "Akses Pengelola",
-        "footer_copyright": "© 2026 MAZIRA SITC. Hak cipta dilindungi.",
-        "footer_privacy": "Kebijakan Privasi"
     }
-    
-}
