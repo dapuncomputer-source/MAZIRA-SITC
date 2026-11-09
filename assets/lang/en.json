@@ -83,9 +83,9 @@
     
 
 
-        "fact_organization": "Majlis Zikir Rasulullah",
+        "fact_organization": "ORGANIZATION",
         "fact_fullname": "FULL NAME",
-        "fact_founder": "FOUNDER",
+        "fact_founder": "Founder",
         "fact_date": "DATE OF ESTABLISHMENT",
         "fact_location": "LOCATION",
         "fullname": "Majlis Zikir Rasulullah",
@@ -93,6 +93,10 @@
         "date": "January 27, 2025",
         "hijri_date": "27 Rajab 1446 AH",
         "location": "Bandung, West Java",
+
+
+
+        
     
 
 
