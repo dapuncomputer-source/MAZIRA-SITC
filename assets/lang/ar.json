@@ -2,6 +2,37 @@
 
 
 {
+    "login": {
+        "welcome_label": "مرحبًا بك في",
+        "welcome_description": "نجمع بين الحكمة الروحية وعمق الفكر والتميز التكنولوجي لبناء المستقبل.",
+        "welcome_motto": "الروحانية • الفكر • التكنولوجيا",
+        "back_label": "العودة",
+        
+        "login_title": "تسجيل الدخول",
+        "login_description": "سجّل الدخول إلى حسابك في MAZIRA SITC.",
+        "email_username": "البريد الإلكتروني أو اسم المستخدم",
+        "email_username_placeholder": "أدخل البريد الإلكتروني أو اسم المستخدم",
+        "password": "كلمة المرور",
+        "password_placeholder": "أدخل كلمة المرور",
+        "show_password": "إظهار",
+        "remember_me": "تذكرني",
+        "forgot_password": "هل نسيت كلمة المرور؟",
+        "login_button": "دخول",
+        "no_account": "ليس لديك حساب؟",
+        "register_link": "إنشاء حساب",
+        "register_title": "إنشاء حساب",
+        "register_description": "أنشئ حسابًا للوصول إلى MAZIRA SITC.",
+        "full_name": "الاسم الكامل",
+        "full_name_placeholder": "أدخل اسمك الكامل",
+        "email": "البريد الإلكتروني",
+        "email_placeholder": "أدخل بريدك الإلكتروني",
+        "create_password_placeholder": "أنشئ كلمة مرور",
+        "create_account": "إنشاء حساب",
+        "have_account": "لديك حساب بالفعل؟",
+        "login_link": "دخول"
+    },
+
+
 
     "navbar": {
         "tagline": "التوفيق بين الحكمة الإلهية والتميز الفكري والتفوق الرقمي",

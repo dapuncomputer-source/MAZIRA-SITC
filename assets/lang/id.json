@@ -2,6 +2,38 @@
 
 
     {
+        "login": {
+            "welcome_label": "SELAMAT DATANG DI",
+            "welcome_description": "Menyatukan kearifan spiritual, ketajaman intelektual, dan keunggulan teknologi untuk membangun masa depan.",
+            "welcome_motto": "SPIRITUAL • INTELEKTUAL • TEKNOLOGI",
+            "back_label": "Kembali",
+
+            "login_title": "Masuk",
+            "login_description": "Masuk ke akun MAZIRA SITC Anda.",
+            "email_username": "Email atau Username",
+            "email_username_placeholder": "Masukkan email atau username",
+            "password": "Password",
+            "password_placeholder": "Masukkan Password",
+            "show_password": "Lihat",
+            "remember_me": "Ingat saya",
+            "forgot_password": "Lupa Password?",
+            "login_button": "Masuk",
+            "no_account": "Belum memiliki akun?",
+            "register_link": "Daftar",
+
+
+            "register_title": "Daftar",
+            "register_description": "Buat akun untuk mengakses MAZIRA SITC.",
+            "full_name": "Nama Lengkap",
+            "full_name_placeholder": "Masukkan nama lengkap",
+            "email": "Email",
+            "email_placeholder": "Masukkan email",
+            "create_password_placeholder": "Buat password",
+            "create_account": "Buat Akun",
+            "have_account": "Sudah memiliki akun?",
+            "login_link": "Masuk"
+        },
+
 
 
         "navbar": {
@@ -12,7 +44,7 @@
             "layanan": "Layanan",
             "aktivitas": "Aktivitas SITC",
             "kontak": "Kontak",
-            "login": "Login"
+            "login": "Masuk"
         },
 
 

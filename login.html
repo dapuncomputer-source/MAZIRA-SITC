@@ -13,20 +13,22 @@
 <body>
     <main class="login-page">
         <!-- Header -->
-        <header class="login-header">
-            <a href="index.html" class="brand">
-                <img src="assets/img/logo/mazira.png" alt="Logo Mazira SITC">
+        <header>
+            <div class="login-header">
+                <a href="index.html" class="brand">
+                    <img src="assets/img/logo/mazira.png" alt="Logo Mazira SITC">
 
-                <div>
-                    <h1>MAZIRA SITC</h1>
-                    <p>SPIRITUAL • INTELLECTUAL • TECHNOLOGICAL CODE</p>
-                </div>
-            </a>
+                    <div>
+                        <h1>MAZIRA SITC</h1>
+                        <p>SPIRITUAL • INTELLECTUAL • TECHNOLOGICAL CODE</p>
+                    </div>
+                </a>
 
-            <a href="index.html" class="exit-btn" aria-label="Kembali ke beranda">
-                <span>x</span>
-                <span>Kembali</span>
-            </a>
+                <a href="index.html" class="exit-btn" aria-label="Kembali ke beranda">
+                    <span>x</span>
+                    <span data-i18n="login.back_label">Kembali</span>
+                </a>
+            </div>
         </header>
 
         <!-- Card Login -->
@@ -42,16 +44,16 @@
                     </div>
                     
 
-                    <p class="welcome-label">WELCOME TO</p>
+                    <p class="welcome-label" data-i18n="login.welcome_label">SELAMAT DATANG DI</p>
 
                     <h2>MAZIRA SITC</h2>
 
-                    <p class="welcome-description">
+                    <p class="welcome-description" data-i18n="login.welcome_description">
                         Menyatukan kearifan spiritual, ketajaman intelektual,
                         dan keunggulan teknologi untuk membangun masa depan.
                     </p>
 
-                    <p class="welcome-motto">
+                    <p class="welcome-motto" data-i18n="login.welcome_motto">
                         SPIRITUAL • INTELEKTUAL • TEKNOLOGI
                     </p>
                 </div>
@@ -62,35 +64,39 @@
                 <!-- Form Login -->
                 <form class="auth-form active" id="loginForm">
                     <div class="form-heading">
-                        <h2>Login</h2>
-                        <p>Masuk ke akun MAZIRA SITC Anda.</p>
+                        <h2 data-i18n="login.login_title">Masuk</h2>
+                        <p data-i18n="login.login_description">
+                            Masuk ke akun MAZIRA SITC Anda.
+                        </p>
                     </div>
 
-                    <label for="loginEmail">Email atau Username</label>
+                    <label for="loginEmail" data-i18n="login.email_username">Email atau Username</label>
                     <div class="input-group">
                         <span class="input-icon"><i class="bx bx-user"></i></span>
                         <input
                             type="text"
                             id="loginEmail"
                             placeholder="Masukkan email atau username"
+                            data-i18n-placeholder="login.email_username_placeholder"
                             autocomplete="username"
                             required
                         >
 
                     </div>
                     
-                    <label for="loginPassword">Password</label>
+                    <label for="loginPassword" data-i18n="login.password">Password</label>
                     <div class="input-group">
                         <span class="input-icon"><i class="bx bx-lock"></i></span>
                         <input
                             type="password"
                             id="loginPassword"
                             placeholder="Masukkan Password"
+                            data-i18n-placeholder="login.password_placeholder"
                             autocomplete="current-password"
                             required
                         >
 
-                        <button type="button" class="password-toggle" data-target="loginPassword">
+                        <button type="button" class="password-toggle" data-target="loginPassword" data-i18n="login.show_password">
                             Lihat
                         </button>
                     </div>
@@ -99,19 +105,20 @@
                     <div class="form-options">
                         <label class="remember">
                             <input type="checkbox">
-                            ingat saya
+                            <span data-i18n="login.remember_me">Ingat saya</span>
                         </label>
 
-                        <a href="#" class="forgot-link">Lupa Password?</a>
+                        <a href="#" class="forgot-link" data-i18n="login.forgot_password">Lupa Password?</a>
                     </div>
 
                     <button type="submit" class="submit-btn">
-                        login <span>→</span>
+                        <span data-i18n="login.login_button">Masuk</span>
+                        <span>→</span>
                     </button>
 
                     <p class="switch-form">
-                        Belum memiliki akun?
-                        <button type="button" id="showRegister">
+                        <span data-i18n="login.no_account">Belum memiliki akun?</span>
+                        <button type="button" id="showRegister" data-i18n="login.register_link">
                             Daftar
                         </button>
                     </p>
@@ -120,57 +127,64 @@
                 <!-- FORM DAFTAR -->
                 <form class="auth-form register-form" id="registerForm">
                     <div class="form-heading">
-                        <h2>Daftar</h2>
-                        <p>Buat akun untuk mengakses Mazira SITC</p>
+                        <h2 data-i18n="login.register_title">Daftar</h2>
+                        <p data-i18n="login.register_description">
+                            Buat akun untuk mengakses Mazira SITC
+                        </p>
                     </div>
 
-                    <label for="registerName">Nama Lengkap</label>
+                    <label for="registerName" data-i18n="login.full_name">Nama Lengkap</label>
                     <div class="input-group">
                         <span class="input-icon"><i class="bx bx-user"></i></span>
                         <input
                             type="text"
                             id="registerName"
                             placeholder="Masukkan nama lengkap"
+                            data-i18n-placeholder="login.full_name_placeholder"
                             autocomplete="name"
                             required
                         >
                     </div>
 
-                    <label for="registerEmail">Email</label>
+                    <label for="registerEmail" data-i18n="login.email">Email</label>
                     <div class="input-group">
                         <span class="input-icon"><i class="bx bx-envelope"></i></span>
                         <input
                             type="email"
                             id="registerEmail"
                             placeholder="Masukkan email"
+                            data-i18n-placeholder="login.email_placeholder"
                             autocomplete="email"
                             required
                         >
                     </div>
 
-                    <label for="registerPassword">Password</label>
+                    <label for="registerPassword" data-i18n="login.password">Password</label>
                     <div class="input-group">
                         <span class="input-icon"><i class="bx bx-key"></i></i></span>
                         <input
                             type="password"
                             id="registerPassword"
                             placeholder="Buat password"
+                            data-i18n-placeholder="login.password_placeholder"
                             autocomplete="new-password"
                             required
                         >
-                        <button type="button" class="password-toggle" data-target="registerPassword">
+                        <button type="button" class="password-toggle" data-target="registerPassword" data-i18n="login.show_password">
                             Lihat
                         </button>
                     </div>
 
                     <button type="submit" class="submit-btn">
-                        Buat Akun <span>→</span>
+                        <span data-i18n="login.create_account">Buat Akun</span> 
+                        <span>→</span>
                     </button>
 
                     <p class="switch-form">
-                        Sudah memiliki akun?
-                        <button type="button" id="showLogin">
-                            Login
+                        <span data-i18n="login.have_account">Sudah memiliki akun?</span>
+                        <button type="button" id="showLogin"
+                            data-i18n="login.login_link" >
+                            Masuk
                         </button>
                     </p>
                 </form>
@@ -181,5 +195,6 @@
     </main>
 
 <script src="assets/js/login.js"></script>
+<script src="assets/js/language.js"></script>
 </body>
 </html>

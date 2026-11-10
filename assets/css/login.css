@@ -34,6 +34,10 @@ a {
     text-decoration: none;
 }
 
+
+
+
+
 /* =====================================
    BACKGROUND
 ===================================== */
@@ -99,6 +103,7 @@ a {
     justify-content: space-between;
     position: relative;
     z-index: 5;
+    margin-bottom: 1rem;
 }
 
 .brand {
@@ -155,7 +160,7 @@ a {
 .auth-container {
     width: min(900px, 100%);
     min-height: 510px;
-    margin: 45px auto;
+    margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     position: relative;
@@ -389,6 +394,7 @@ a {
 
 .input-icon {
     padding-left: 14px;
+    padding-right: 10px;
     color: var(--emas);
 }
 
