@@ -198,6 +198,20 @@
 
 
 
+
+        "services": {
+            "hero_eyebrow": "Layanan MAZIRA SITC",
+            "hero_title1": "Mengembangkan Potensi,",
+            "hero_title2": "Membangun Masa Depan.",
+            "hero_description": "Menghadirkan layanan pengembangan spiritual, intelektual, dan teknologi sebagai upaya membangun generasi yang berilmu, berkarakter, dan berdaya.",
+            "hero_button": "Jelajahi Layanan"
+        },
+
+
+
+
+
+
         "footer": {
             "hero_description": "Menyelaraskan Kearifan Ilahi, Ketajaman Intelektual, dan Keunggulan Digital.",
             "hero_explore": "Jelajahi MAZIRA",
