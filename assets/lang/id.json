@@ -204,7 +204,82 @@
             "hero_title1": "Mengembangkan Potensi,",
             "hero_title2": "Membangun Masa Depan.",
             "hero_description": "Menghadirkan layanan pengembangan spiritual, intelektual, dan teknologi sebagai upaya membangun generasi yang berilmu, berkarakter, dan berdaya.",
-            "hero_button": "Jelajahi Layanan"
+            "hero_button": "Jelajahi Layanan",
+            "visual_caption": "SPIRITUAL • INTELLECTUAL • TECHNOLOGICAL",
+
+
+
+            "intro_eyebrow": "TENTANG LAYANAN",
+            "intro_title": "Tiga Pilar Pengembangan",
+            "intro_description": "Setiap layanan MAZIRA SITC dikembangkan berdasarkan tiga kerangka utama yang saling melengkapi untuk membentuk pribadi yang seimbang.",
+
+            "spiritual_title": "Kode Spiritual",
+            "spiritual_motto": "Membersihkan Hati, Menemukan Kedamaian Batin.",
+            "spiritual_description": "Layanan yang berfokus pada penguatan spiritual melalui praktik zikir terpadu, pendalaman makna syahadat, dan kecintaan kepada Nabi Muhammad SAW.",
+            "detail_button": "Pelajari Layanan",
+
+            "intellectual_title": "Kode Intelektual",
+            "intellectual_motto": "Mengasah Pikiran, Membangun Integritas.",
+            "intellectual_description": "Program pengembangan kapasitas intelektual yang menjembatani ilmu modern dengan nilai moral melalui seminar, kajian, dan pemikiran kritis.",
+
+            "technology_title": "Kode Teknologi",
+            "technology_motto": "Menguasai Teknologi, Membangun Masa Depan.",
+            "technology_description": "Pelatihan teknologi berbasis pemrograman dan rekayasa perangkat lunak untuk membekali generasi dengan keterampilan digital.",
+            
+
+
+
+            "spiritual_eyebrow": "PENGUATAN SPIRITUAL",
+            "spiritual_section_title": "Layanan Spiritual",
+            "spiritual_section_description": "Membangun kedamaian batin dan memperkuat keimanan melalui pendekatan spiritual Islam.",
+
+
+            "spiritual_service1_title": "Sesi Zikir Terpandu",
+            "spiritual_service1_text": "Sesi rutin untuk praktik wirid dengan fokus pada penguatan tauhid melalui syahadat dan kecintaan kepada Nabi Muhammad SAW melalui shalawat.",
+            
+            "spiritual_service2_title": "Bimbingan Spiritual dan Kesadaran Diri",
+            "spiritual_service2_text": "Bimbingan untuk mengenali diri dan membangun ketenangan batin di tengah tekanan kehidupan modern melalui pendekatan berbasis zikir.",
+
+            "spiritual_service3_title": "Workshop Teologi",
+            "spiritual_service3_text": "Kajian mendalam mengenai ajaran Islam, pentingnya syahadat, dan filosofi ibadah sebagai dasar pengabdian kepada Allah SWT.",
+
+
+
+
+            "intellectual_eyebrow": "PENGEMBANGAN INTELEKTUAL",
+            "intellectual_section_title": "Layanan Intelektual",
+            "intellectual_section_description": "Mengembangkan kemampuan berpikir kritis, integritas moral, dan kapasitas akademik.",
+
+
+            "intellectual_service1_title": "Seminar Pendidikan Holistik",
+            "intellectual_service1_text": "Pelatihan dan seminar yang menggabungkan pengetahuan agama dengan ilmu pengetahuan umum untuk membangun wawasan yang menyeluruh.",
+
+            "intellectual_service2_title": "Berpikir Kritis dan Kepemimpinan Moral",
+            "intellectual_service2_text": "Program pengembangan karakter yang menekankan integritas moral, kemampuan berpikir kritis, dan kecerdasan intelektual.",
+
+            "intellectual_service3_title": "Program Literasi dan Riset",
+            "intellectual_service3_text": "Dukungan pengembangan pengetahuan kontemporer melalui literasi dan kegiatan riset yang relevan dengan kemajuan bangsa Indonesia.",
+
+
+
+            "technology_eyebrow": "PENGUASAAN TEKNOLOGI",
+            "technology_section_title": "Layanan Teknologi",
+            "technology_section_description": "Membekali generasi dengan keterampilan pemrograman dan pemanfaatan teknologi yang beretika.",
+            
+            "technology_service1_title": "Bootcamp Coding dan Pemrograman",
+            "technology_service1_text": "Kursus intensif rekayasa perangkat lunak yang dirancang untuk mengembangkan kemampuan pemrograman dan keterampilan teknis peserta.",
+            
+            "technology_service2_title": "Workshop Transformasi Digital",
+            "technology_service2_text": "Pendidikan mengenai pemanfaatan teknologi kontemporer untuk meningkatkan efisiensi kerja, kreativitas, dan inovasi.",
+            
+            "technology_service3_title": "Konsultasi Etika Teknologi",
+            "technology_service3_text": "Bimbingan mengenai pemanfaatan dan pengembangan teknologi yang tetap berlandaskan nilai etika dan moral.",
+            
+            "cta_eyebrow": "BERTUMBUH BERSAMA MAZIRA",
+            "cta_title": "Membangun Generasi yang Berilmu dan Berdaya.",
+            "cta_description": "Mengembangkan potensi diri melalui keseimbangan spiritual, intelektual, dan teknologi.",
+            "cta_button": "Hubungi Kami"
+            
         },
 
 
