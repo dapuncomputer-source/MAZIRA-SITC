@@ -154,6 +154,11 @@ html {
     letter-spacing: -2px;
 }
 
+.activity-hero h1 .title2 {
+    color: var(--activity-gold);
+
+}
+
 .activity-hero h1::first-line {
     color: var(--activity-white);
 }
