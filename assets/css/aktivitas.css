@@ -1,0 +1,620 @@
+
+/* =========================================
+   AKTIVITAS MAZIRA SITC
+========================================= */
+
+/* RESET KHUSUS HALAMAN */
+html {
+    scroll-behavior: smooth;
+}
+
+.activity-hero,
+.activity-introduction,
+.activity-list,
+.activity-documentation,
+.activity-cta {
+    width: 100%;
+}
+
+.activity-hero *,
+.activity-introduction *,
+.activity-list *,
+.activity-documentation *,
+.activity-cta * {
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   WARNA DAN VARIABEL
+========================================= */
+
+:root {
+    --activity-black: #0B0B0B;
+    --activity-black-light: #171717;
+    --activity-gold: #C9A646;
+    --activity-gold-hover: #D9B95F;
+    --activity-white: #FFFFFF;
+    --activity-gray: #B8B8B8;
+    --activity-border: rgba(201, 166, 70, 0.2);
+}
+
+
+/* =========================================
+   HERO SECTION
+========================================= */
+
+.activity-hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    isolation: isolate;
+    color: var(--activity-white);
+    background:
+        radial-gradient(
+            circle at 80% 50%,
+            rgba(201, 166, 70, 0.13),
+            transparent 35%
+        ),
+        linear-gradient(
+            120deg,
+            #080808 0%,
+            #111111 55%,
+            #080808 100%
+        );
+}
+
+.activity-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0.12;
+    background-image:
+        linear-gradient(
+            rgba(201, 166, 70, 0.12) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(201, 166, 70, 0.12) 1px,
+            transparent 1px
+        );
+    background-size: 65px 65px;
+    -webkit-mask-image: linear-gradient(
+        to right,
+        transparent,
+        black
+    );
+    mask-image: linear-gradient(
+        to right,
+        transparent,
+        black
+    );
+}
+
+.activity-hero::after {
+    content: "";
+    position: absolute;
+    width: 480px;
+    height: 480px;
+    right: -150px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background: rgba(201, 166, 70, 0.08);
+    filter: blur(90px);
+    z-index: -1;
+}
+
+.activity-hero .container {
+    /* width: 100%; */
+    max-width: 1440px;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 60px;
+    padding-top: 20px;
+    padding-bottom: 70px;
+}
+
+.activity-hero-content {
+    max-width: 660px;
+    animation: activityHeroEnter 1s ease both;
+}
+
+.activity-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--activity-gold);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 24px;
+}
+
+.activity-eyebrow::before {
+    content: "";
+    width: 35px;
+    height: 1px;
+    background: var(--activity-gold);
+}
+
+.activity-hero h1 {
+    max-width: 680px;
+    margin: 0 0 25px;
+    color: var(--activity-white);
+    font-size: clamp(2.8rem, 5.5vw, 5rem);
+    font-weight: 700;
+    line-height: 1.12;
+    letter-spacing: -2px;
+}
+
+.activity-hero h1::first-line {
+    color: var(--activity-white);
+}
+
+.activity-hero-content > p {
+    max-width: 570px;
+    color: var(--activity-gray);
+    font-size: 1.05rem;
+    line-height: 1.9;
+    margin-bottom: 35px;
+}
+
+.activity-button {
+    min-height: 52px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 0 25px;
+    color: var(--activity-black);
+    background: var(--activity-gold);
+    border: 1px solid var(--activity-gold);
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.activity-button:hover {
+    color: var(--activity-black);
+    background: var(--activity-gold-hover);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(201, 166, 70, 0.2);
+}
+
+.activity-button i {
+    font-size: 1.3rem;
+    transition: transform 0.3s ease;
+}
+
+.activity-button:hover i {
+    transform: translateX(5px);
+}
+
+
+/* VISUAL HERO */
+.activity-hero-visual {
+    position: relative;
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.activity-hero-visual::before,
+.activity-hero-visual::after {
+    content: "";
+    position: absolute;
+    border: 1px solid rgba(201, 166, 70, 0.2);
+    border-radius: 50%;
+    animation: activityOrbit 18s linear infinite;
+}
+
+.activity-hero-visual::before {
+    width: 330px;
+    height: 330px;
+}
+
+.activity-hero-visual::after {
+    width: 440px;
+    height: 440px;
+    animation-direction: reverse;
+    animation-duration: 28s;
+}
+
+.activity-hero-visual > * {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* =========================================
+   JUDUL SECTION
+========================================= */
+
+.section-heading {
+    max-width: 720px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+.section-heading > span {
+    display: inline-block;
+    color: var(--activity-gold);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 16px;
+}
+
+.section-heading h2 {
+    color: var(--activity-black);
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.25;
+    margin: 0 0 18px;
+}
+
+.section-heading p {
+    color: #666666;
+    font-size: 0.98rem;
+    line-height: 1.8;
+    margin: 0;
+}
+
+
+/* =========================================
+   PENGANTAR AKTIVITAS
+========================================= */
+
+.activity-introduction {
+    padding: 110px 0 80px;
+    background: #F5F3EE;
+}
+
+
+/* =========================================
+   DAFTAR AKTIVITAS
+========================================= */
+
+.activity-list {
+    padding: 100px 0;
+    background: var(--activity-white);
+}
+
+.activity-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.activity-card {
+    overflow: hidden;
+    background: var(--activity-white);
+    border: 1px solid #E8E5DD;
+    border-radius: 7px;
+    transition: 0.35s ease;
+}
+
+.activity-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--activity-gold);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.activity-card-image {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    background:
+        linear-gradient(
+            135deg,
+            #171717,
+            #303030
+        );
+}
+
+.activity-card-image::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-bottom: 3px solid var(--activity-gold);
+    opacity: 0.8;
+}
+
+.activity-card-content {
+    padding: 28px;
+}
+
+.activity-category {
+    display: inline-block;
+    color: #A88732;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.activity-card h3 {
+    color: var(--activity-black);
+    font-size: 1.25rem;
+    margin: 0 0 12px;
+}
+
+.activity-card p {
+    color: #777777;
+    font-size: 0.9rem;
+    line-height: 1.8;
+    margin: 0;
+}
+
+
+/* =========================================
+   DOKUMENTASI
+========================================= */
+
+.activity-documentation {
+    padding: 100px 0;
+    background: #F5F3EE;
+}
+
+.documentation-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.documentation-item {
+    position: relative;
+    min-height: 230px;
+    overflow: hidden;
+    border-radius: 6px;
+    background:
+        linear-gradient(
+            135deg,
+            #171717,
+            #343434
+        );
+    border: 1px solid var(--activity-border);
+    transition: 0.3s ease;
+}
+
+.documentation-item:hover {
+    transform: translateY(-5px);
+    border-color: var(--activity-gold);
+}
+
+.documentation-item::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.4),
+        transparent
+    );
+}
+
+.documentation-empty {
+    margin-top: 30px;
+    color: #777777;
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+
+/* =========================================
+   CALL TO ACTION
+========================================= */
+
+.activity-cta {
+    position: relative;
+    overflow: hidden;
+    padding: 100px 0;
+    color: var(--activity-white);
+    background:
+        radial-gradient(
+            circle at 85% 50%,
+            rgba(201, 166, 70, 0.14),
+            transparent 35%
+        ),
+        var(--activity-black);
+}
+
+.activity-cta-content {
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.activity-cta-content > span {
+    display: inline-block;
+    color: var(--activity-gold);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+}
+
+.activity-cta h2 {
+    color: var(--activity-white);
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    line-height: 1.25;
+    margin: 0 0 20px;
+}
+
+.activity-cta p {
+    color: var(--activity-gray);
+    font-size: 0.95rem;
+    line-height: 1.8;
+    margin: 0 0 30px;
+}
+
+
+/* =========================================
+   ANIMASI
+========================================= */
+
+@keyframes activityHeroEnter {
+    from {
+        opacity: 0;
+        transform: translateY(35px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes activityOrbit {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* =========================================
+   RESPONSIVE TABLET
+========================================= */
+
+@media (max-width: 992px) {
+
+    .activity-hero .container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .activity-hero-content {
+        margin: 0 auto;
+    }
+
+    .activity-hero-content > p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .activity-eyebrow {
+        justify-content: center;
+    }
+
+    .activity-hero-visual {
+        min-height: 300px;
+    }
+
+    .activity-hero-visual::before {
+        width: 250px;
+        height: 250px;
+    }
+
+    .activity-hero-visual::after {
+        width: 320px;
+        height: 320px;
+    }
+
+    .activity-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+
+/* =========================================
+   RESPONSIVE MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .activity-hero {
+        min-height: auto;
+    }
+
+    .activity-hero .container {
+        min-height: auto;
+        padding-top: 110px;
+        padding-bottom: 55px;
+    }
+
+    .activity-hero h1 {
+        font-size: 2.5rem;
+        letter-spacing: -1px;
+    }
+
+    .activity-hero-content > p {
+        font-size: 0.9rem;
+    }
+
+    .activity-hero-visual {
+        min-height: 230px;
+    }
+
+    .activity-hero-visual::before {
+        width: 190px;
+        height: 190px;
+    }
+
+    .activity-hero-visual::after {
+        width: 250px;
+        height: 250px;
+    }
+
+    .activity-introduction,
+    .activity-list,
+    .activity-documentation,
+    .activity-cta {
+        padding: 70px 0;
+    }
+
+    .section-heading {
+        margin-bottom: 40px;
+    }
+
+    .section-heading h2 {
+        font-size: 2rem;
+    }
+
+    .activity-grid,
+    .documentation-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .activity-card-content {
+        padding: 22px;
+    }
+
+    .documentation-item {
+        min-height: 200px;
+    }
+}
+
+
+/* =========================================
+   AKSESIBILITAS ANIMASI
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .activity-hero-content,
+    .activity-hero-visual::before,
+    .activity-hero-visual::after {
+        animation: none;
+    }
+
+    .activity-card,
+    .documentation-item,
+    .activity-button {
+        transition: none;
+    }
+}

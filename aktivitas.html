@@ -1,0 +1,526 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Informasi aktivitas dan kegiatan MAZIRA SITC.">
+
+    <title>Aktivitas | MAZIRA SITC</title>
+
+    <!-- Box Icons -->
+    <link
+        href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/aktivitas.css">
+</head>
+
+<body>
+
+    <!-- =========== NAVBAR ========== -->
+    <header class="header">
+
+        <!-- TOPBAR -->
+        <div class="topbar">
+            <div class="container topbar-container">
+
+                <p class="tagline" data-i18n="navbar.tagline">
+                    Memadukan kearifan ilahi,  ketajaman pikiran, dan keahlian digital
+                </p>
+
+                <!-- PILIHAN BAHASA -->
+                <div class="language" aria-label="Pilihan bahasa">
+                    <button class="lang active"
+                            type="button"
+                            data-language="id"
+                            aria-pressed="true">ID</button>
+
+                    <span aria-hidden="true">|</span>
+
+                    <button class="lang"
+                            type="button"
+                            data-language="en"
+                            aria-pressed="false">EN</button>
+
+                    <span aria-hidden="true">|</span>
+
+                    <button class="lang arabic"
+                            type="button"
+                            data-language="ar"
+                            aria-pressed="false">العربية</button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- NAVIGASI UTAMA -->
+        <div class="navbar-wrapper">
+            <nav class="navbar container" aria-label="Navigasi utama">
+
+                <!-- BRAND / IDENTITAS ORGANISASI -->
+                <a href="index.html" class="brand" aria-label="MAZIRA SITC - Beranda">
+
+                    <img 
+                        src="assets/img/logo/mazira.png"
+                        class="brand-logo"
+                        alt="Logo organisasi"
+                    >
+
+                    <div class="brand-text">
+                        <h1>MAZIRA SITC</h1>
+
+                        <p data-i18n="navbar.brand_description" >
+                            SPIRITUAL • INTELLECTUAL • TECHNOLOGICAL CODE
+                        </p>
+                    </div>
+
+                </a>
+
+                <!-- MENU NAVIGASI -->
+                <ul class="nav-menu">
+
+                    <li><a href="index.html" class="nav-link"
+                        data-i18n="navbar.beranda" >Beranda</a></li>
+
+                    <li><a href="tentang.html" class="nav-link"
+                        data-i18n="navbar.tentang_kami" >Tentang kami</a></li>
+
+                    <li><a href="layanan.html" class="nav-link"
+                        data-i18n="navbar.layanan" >Layanan</a></li>
+                        
+                    <li><a href="aktivitas.html" class="nav-link active"
+                        aria-current="page" data-i18n="navbar.aktivitas">Aktivitas SITC</a></li>
+                            
+                    <li><a href="kontak.html" class="nav-link"
+                        data-i18n="navbar.kontak">Kontak</a></li>
+                </ul>
+
+                <!-- TOMBOL LOGIN -->
+                <a href="login.html" class="login-btn">
+
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true">
+
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                        <circle cx="12" cy="7" r="4"/>
+
+                    </svg>
+
+                    <span data-i18n="navbar.login">Login</span>
+
+                </a>
+
+            </nav>
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- =================================
+             HERO AKTIVITAS
+        ================================== -->
+
+        <section class="activity-hero">
+
+            <div class="container">
+
+                <div class="activity-hero-content">
+
+                    <span class="activity-eyebrow"
+                          data-i18n="activity.hero_eyebrow">
+                        AKTIVITAS MAZIRA SITC
+                    </span>
+
+                    <h1 data-i18n="activity.hero_title">
+                        Bergerak, Bertumbuh,
+                        dan Mengabdi.
+                    </h1>
+
+                    <p data-i18n="activity.hero_description">
+                        Mengenal berbagai aktivitas dan kegiatan
+                        MAZIRA SITC dalam membangun generasi
+                        melalui spiritual, intelektual, dan teknologi.
+                    </p>
+
+                    <a href="#activity-list"
+                       class="activity-button">
+
+                        <span data-i18n="activity.hero_button">
+                            Jelajahi Aktivitas
+                        </span>
+
+                        <i class="bx bx-right-arrow-alt"></i>
+
+                    </a>
+
+                </div>
+
+                <!-- VISUAL / ILUSTRASI -->
+                <div class="activity-hero-visual">
+
+                    <!-- Tempat ilustrasi logo atau animasi -->
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================
+             PENGANTAR AKTIVITAS
+        ================================== -->
+
+        <section class="activity-introduction">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span data-i18n="activity.intro_eyebrow">
+                        TENTANG AKTIVITAS
+                    </span>
+
+                    <h2 data-i18n="activity.intro_title">
+                        Ruang untuk Bertumbuh dan Berkarya
+                    </h2>
+
+                    <p data-i18n="activity.intro_description">
+                        Bagian ini akan menjelaskan gambaran umum
+                        aktivitas MAZIRA SITC.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================
+             DAFTAR AKTIVITAS
+        ================================== -->
+
+        <section class="activity-list" id="activity-list">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span data-i18n="activity.list_eyebrow">
+                        PROGRAM KEGIATAN
+                    </span>
+
+                    <h2 data-i18n="activity.list_title">
+                        Aktivitas MAZIRA SITC
+                    </h2>
+
+                    <p data-i18n="activity.list_description">
+                        Lorem ipsum dolor sit, 
+                        amet consectetur adipisicing elit. 
+                        Commodi cumque blanditiis iusto?
+                    </p>
+
+                </div>
+
+
+                <div class="activity-grid">
+
+                    <!-- KARTU AKTIVITAS 1 -->
+                    <article class="activity-card">
+
+                        <div class="activity-card-image">
+                            <!-- Tempat gambar kegiatan -->
+                        </div>
+
+                        <div class="activity-card-content">
+
+                            <span class="activity-category">
+                                AKTIVITAS 01
+                            </span>
+
+                            <h3>
+                                Informasi Kegiatan
+                            </h3>
+
+                            <p>
+                                Lorem ipsum dolor sit amet 
+                                consectetur adipisicing elit.
+                                Quisquam enim eveniet cumque!
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- KARTU AKTIVITAS 2 -->
+                    <article class="activity-card">
+
+                        <div class="activity-card-image">
+                            <!-- Tempat gambar kegiatan -->
+                        </div>
+
+                        <div class="activity-card-content">
+
+                            <span class="activity-category">
+                                AKTIVITAS 02
+                            </span>
+
+                            <h3>
+                                Informasi Kegiatan
+                            </h3>
+
+                            <p>
+                                Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit.
+                                Repellat iure eius excepturi.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- KARTU AKTIVITAS 3 -->
+                    <article class="activity-card">
+
+                        <div class="activity-card-image">
+                            <!-- Tempat gambar kegiatan -->
+                        </div>
+
+                        <div class="activity-card-content">
+
+                            <span class="activity-category">
+                                AKTIVITAS 03
+                            </span>
+
+                            <h3>
+                                Informasi Kegiatan
+                            </h3>
+
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur
+                                adipisicing elit. Eos modi ducimus optio.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================
+             DOKUMENTASI KEGIATAN
+        ================================== -->
+
+        <section class="activity-documentation">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span data-i18n="activity.gallery_eyebrow">
+                        GALERI KEGIATAN
+                    </span>
+
+                    <h2 data-i18n="activity.gallery_title">
+                        Dokumentasi Aktivitas
+                    </h2>
+
+                    <p data-i18n="activity.gallery_description">
+                        Dokumentasi kegiatan MAZIRA SITC.
+                    </p>
+
+                </div>
+
+
+                <div class="documentation-grid">
+
+                    <!-- FOTO 1 -->
+                    <div class="documentation-item">
+                        <!-- Tempat foto dokumentasi -->
+                    </div>
+
+                    <!-- FOTO 2 -->
+                    <div class="documentation-item">
+                        <!-- Tempat foto dokumentasi -->
+                    </div>
+
+                    <!-- FOTO 3 -->
+                    <div class="documentation-item">
+                        <!-- Tempat foto dokumentasi -->
+                    </div>
+
+                </div>
+
+                <p class="documentation-empty">
+                    Dokumentasi kegiatan akan ditampilkan
+                    setelah tersedia.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================
+             AJAKAN BERPARTISIPASI
+        ================================== -->
+
+        <section class="activity-cta">
+
+            <div class="container">
+
+                <div class="activity-cta-content">
+
+                    <span data-i18n="activity.cta_eyebrow">
+                        BERSAMA MAZIRA SITC
+                    </span>
+
+                    <h2 data-i18n="activity.cta_title">
+                        Mari Bertumbuh dan Berkontribusi.
+                    </h2>
+
+                    <p data-i18n="activity.cta_description">
+                        Hubungi MAZIRA SITC untuk mendapatkan
+                        informasi lebih lanjut.
+                    </p>
+
+                    <a href="kontak.html"
+                       class="activity-button">
+
+                        <span data-i18n="activity.cta_button">
+                            Hubungi Kami
+                        </span>
+
+                        <i class="bx bx-right-arrow-alt"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    
+
+    <!-- =========== FOOTER ========== -->
+    <footer class="footer" id="footer">
+        <div class="container">
+        
+            <div class="footer-main" data-reveal>
+            
+                <!-- IDENTITAS ORGANISASI -->
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-brand-link">
+                        <img
+                            src="assets/img/logo/mazira.png"
+                            alt="Logo MAZIRA SITC"
+                            class="footer-logo"
+                        >
+                    
+                        <span class="footer-brand-name">
+                            MAZIRA SITC
+                        </span>
+                    </a>
+                
+                    <p class="footer-tagline" data-i18n="footer.hero_description">
+                        Menyelaraskan Kearifan Ilahi, Ketajaman
+                        Intelektual, dan Keunggulan Digital.
+                    </p>
+                
+                    <p class="footer-motto" data-i18n="footer.brand_description">
+                        SPIRITUAL • INTELLECTUAL • TECHNOLOGY
+                    </p>
+                </div>
+            
+                <!-- NAVIGASI -->
+                <div class="footer-column">
+                    <h3 data-i18n="footer.footer_explore">Jelajahi</h3>
+                
+                    <ul>
+                        <li><a href="#" data-i18n="navbar.beranda">Beranda</a></li>
+                        <li><a href="#" data-i18n="navbar.tentang_kami">Tentang Kami</a></li>
+                        <li><a href="#" data-i18n="navbar.layanan">Layanan</a></li>
+                        <li><a href="#" data-i18n="navbar.aktivitas">Aktivitas SITC</a></li>
+                        <li><a href="#" data-i18n="navbar.kontak">Kontak</a></li>
+                    </ul>
+                </div>
+            
+                <!-- INFORMASI -->
+                <div class="footer-column">
+                    <h3 data-i18n="footer.footer_information">Informasi</h3>
+                
+                    <ul>
+                        <li><a href="aktivitas.html" data-i18n="navbar.aktivitas">Aktivitas</a></li>
+                        <li><a href="tentang.html" data-i18n="navbar.tentang_kami">Tentang Kami</a></li>
+                    </ul>
+                </div>
+            
+                <!-- KONTAK -->
+                <div class="footer-column footer-contact">
+                    <h3 data-i18n="footer.footer_contact">Hubungi Kami</h3>
+                
+                    <p data-i18n="footer.footer_contact_description">
+                        Untuk informasi dan kerja sama,
+                        silakan hubungi pengelola MAZIRA SITC.
+                    </p>
+                
+                    <!-- Isi dengan kontak resmi setelah tersedia -->
+                    <a href="login.html" class="footer-contact-link" data-i18n="footer.footer_manager">
+                        Akses Pengelola
+                    </a>
+                </div>
+            
+            </div>
+        
+            <!-- COPYRIGHT -->
+            <div class="footer-bottom" data-reveal>
+                <p data-i18n="footer.footer_copyright">
+                    &copy; 2026 MAZIRA SITC.
+                    Hak cipta dilindungi.
+                </p>
+            
+                <a href="kebijakan-privasi.html" data-i18n="footer.footer_privacy">
+                    Kebijakan Privasi
+                </a>
+            </div>
+        
+        </div>
+    </footer>
+
+
+
+    <!-- JAVASCRIPT -->
+    <script src="assets/js/language.js"></script>
+    <script src="assets/js/scroll-animate.js"></script>
+
+</body>
+</html>

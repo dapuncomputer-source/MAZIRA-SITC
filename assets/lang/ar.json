@@ -290,6 +290,51 @@
 
 
 
+
+    "contact": {
+        "hero_eyebrow": "تواصل معنا",
+        "hero_title1": "لنتواصل",
+        "hero_title2": "مع MAZIRA SITC",
+        "hero_description": "نرحب باستفساراتكم وأسئلتكم وفرص التعاون والعمل المشترك.",
+        "hero_button": "معلومات الاتصال",
+        
+        "info_eyebrow": "المعلومات",
+        "info_title": "معلومات الاتصال",
+        "info_description": "يرجى استخدام المعلومات التالية للتواصل مع فريق MAZIRA SITC.",
+        
+        "address_title": "العنوان",
+        "address_value": "Gg. Neglasari V No.27, Cijaura, Buahbatu District, Bandung City, West Java 40287, Indonesia",
+        "email_title": "البريد الإلكتروني",
+        "email_value": "info@mazirasitc.id",
+        "whatsapp_title": "واتساب",
+        "whatsapp_value": "+62 821-3301-5913",
+        "hours_title": "ساعات العمل",
+        "hours_value": "من الساعة 6:00 مساءً إلى 8:00 مساءً، كل يوم اثنين وخميس",
+        
+        "form_eyebrow": "أرسل رسالة",
+        "form_title": "هل لديك أي استفسار؟",
+        "form_description": "أرسل أسئلتك أو رسائلك من خلال النموذج التالي.",
+        "name_label": "الاسم الكامل",
+        "name_placeholder": "أدخل اسمك الكامل",
+        "email_label": "عنوان البريد الإلكتروني",
+        "email_placeholder": "أدخل عنوان بريدك الإلكتروني",
+        "subject_label": "موضوع الرسالة",
+        "subject_placeholder": "اكتب موضوع رسالتك",
+        "message_label": "نص الرسالة",
+        "message_placeholder": "اكتب رسالتك هنا",
+        "submit_button": "إرسال الرسالة",
+        "form_note": "هذا النموذج غير متصل حاليًا بنظام إرسال الرسائل.",
+        
+        "location_eyebrow": "موقعنا",
+        "location_title": "اعثر على موقع MAZIRA SITC",
+        "location_description": "يقع مقر MAZIRA SITC في باندونغ، جاوة الغربية، إندونيسيا.",
+        "map_note": "تعرض هذه الخريطة حاليًا منطقة باندونغ. ستتم إضافة الموقع الرسمي بعد توفر العنوان الكامل لـ MAZIRA SITC."
+    },
+
+
+
+
+
     "footer": {
         "hero_description": "ننسجم مع الحكمة الإلهية والتميز الفكري والابتكار الرقمي.",
         "hero_explore": "اكتشف مازيرا",

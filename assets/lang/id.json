@@ -287,6 +287,52 @@
 
 
 
+
+
+        "contact": {
+            "hero_eyebrow": "HUBUNGI KAMI",
+            "hero_title1": "Mari Terhubung",
+            "hero_title2": "dengan MAZIRA SITC",
+            "hero_description": "Kami terbuka untuk informasi, pertanyaan, kolaborasi, dan peluang kerja sama.",
+            "hero_button": "Informasi Kontak",
+                
+            "info_eyebrow": "INFORMASI",
+            "info_title": "Informasi Kontak",
+            "info_description": "Silakan gunakan informasi berikut untuk menghubungi pengelola MAZIRA SITC.",
+                
+            "address_title": "Alamat",
+            "address_value": "Gg. Neglasari V No.27, Cijaura, Kec. Buahbatu, Kota Bandung, Jawa Barat 40287",
+            "email_title": "Email",
+            "email_value": "info@mazirasitc.id",
+            "whatsapp_title": "WhatsApp",
+            "whatsapp_value": "+62 821-3301-5913",
+            "hours_title": "Jam Operasional",
+            "hours_value": "18.00–20.00, setiap Senin dan Kamis",
+                
+            "form_eyebrow": "KIRIM PESAN",
+            "form_title": "Ada yang Ingin Ditanyakan?",
+            "form_description": "Sampaikan pertanyaan atau pesan Anda melalui formulir berikut.",
+            "name_label": "Nama Lengkap",
+            "name_placeholder": "Masukkan nama lengkap",
+            "email_label": "Alamat Email",
+            "email_placeholder": "Masukkan alamat email",
+            "subject_label": "Subjek Pesan",
+            "subject_placeholder": "Tuliskan subjek pesan",
+            "message_label": "Isi Pesan",
+            "message_placeholder": "Tuliskan pesan Anda di sini",
+            "submit_button": "Kirim Pesan",
+            "form_note": "Formulir ini belum terhubung ke sistem pengiriman pesan.",
+                
+            "location_eyebrow": "LOKASI KAMI",
+            "location_title": "Temukan Lokasi MAZIRA SITC",
+            "location_description": "MAZIRA SITC berkedudukan di Bandung, Jawa Barat, Indonesia.",
+            "map_note": "Peta ini sementara menampilkan wilayah Bandung. Titik lokasi resmi akan ditambahkan setelah alamat lengkap MAZIRA SITC tersedia."
+        },
+
+
+
+
+
         "footer": {
             "hero_description": "Menyelaraskan Kearifan Ilahi, Ketajaman Intelektual, dan Keunggulan Digital.",
             "hero_explore": "Jelajahi MAZIRA",

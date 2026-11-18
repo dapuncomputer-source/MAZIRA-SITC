@@ -311,6 +311,51 @@
         "cta_button": "Hubungi Kami"
     },
 
+
+
+
+
+
+    "contact": {
+        "hero_eyebrow": "CONTACT US",
+        "hero_title1": "Let's Connect",
+        "hero_title2": "with MAZIRA SITC",
+        "hero_description": "We welcome inquiries, questions, collaborations, and opportunities to work together.",
+        "hero_button": "Contact Information",
+        
+        "info_eyebrow": "INFORMATION",
+        "info_title": "Contact Information",
+        "info_description": "Please use the following information to contact the MAZIRA SITC team.",
+        
+        "address_title": "Address",
+        "address_value": "Gg. Neglasari V No.27, Cijaura, Buahbatu District, Bandung City, West Java 40287, Indonesia",
+        "email_title": "Email",
+        "email_value": "info@mazirasitc.id",
+        "whatsapp_title": "WhatsApp",
+        "whatsapp_value": "+62 821-3301-5913",
+        "hours_title": "Operating Hours",
+        "hours_value": "6:00 PM–8:00 PM, every Monday and Thursday",
+        
+        "form_eyebrow": "SEND A MESSAGE",
+        "form_title": "Do You Have Any Questions?",
+        "form_description": "Send us your questions or messages using the form below.",
+        "name_label": "Full Name",
+        "name_placeholder": "Enter your full name",
+        "email_label": "Email Address",
+        "email_placeholder": "Enter your email address",
+        "subject_label": "Message Subject",
+        "subject_placeholder": "Enter the subject of your message",
+        "message_label": "Your Message",
+        "message_placeholder": "Write your message here",
+        "submit_button": "Send Message",
+        "form_note": "This form is not yet connected to a message delivery system.",
+        
+        "location_eyebrow": "OUR LOCATION",
+        "location_title": "Find MAZIRA SITC",
+        "location_description": "MAZIRA SITC is based in Bandung, West Java, Indonesia.",
+        "map_note": "This map currently displays the Bandung area. The official location pin will be added once the full MAZIRA SITC address is available."
+    },
+
     
 
 
